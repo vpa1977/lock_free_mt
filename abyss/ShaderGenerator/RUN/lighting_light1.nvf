@@ -1,0 +1,123 @@
+
+#include "constants.h"
+
+vs.1.1
+
+// == NONE ===============================================================
+
+#beginfragment f_lighting_light1_none
+    mov r_light_1_result.xyz, r_light_0_result.xyz
+#endfragment
+
+// == DIR ================================================================
+
+#beginfragment f_lighting_light1_dir
+    dp3 r_light_tmp.x, VERTEX_NORMAL, CONST_LIGHT_1_DIR
+    max r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.y
+    // TODO: do we need next instruction ?
+    // Both vectors are normalized. Dot product cant be greater than 1.
+    min r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.x
+
+    mad r_light_1_result.xyz, CONST_LIGHT_1_COLOR.xyz, r_light_tmp.xxx, r_light_0_result.xyz
+#endfragment
+
+// == POINT ==============================================================
+
+#beginfragment f_lighting_light1_point
+    add r_light_tmp.xyz, -VERTEX_POSITION, CONST_LIGHT_1_ORG
+    dp3 r_light_tmp.w, r_light_tmp, r_light_tmp
+    rsq r_light_tmp.w, r_light_tmp.w
+    mul r_light_tmp.xyz, r_light_tmp.xyz, r_light_tmp.www
+    // r_light_tmp.xyz = vertex_to_light_normalized
+
+    rcp r_light_tmp.w, r_light_tmp.w
+    // r_light_tmp.w = length(vertex_to_light)
+
+    dp3 r_light_tmp.x, VERTEX_NORMAL, r_light_tmp
+    max r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.y
+    // TODO: do we need next instruction ?
+    // Both vectors are normalized. Dot product cant be greater than 1.
+    min r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.x
+    // r_light_tmp.x = intensity_norm
+
+    mul r_light_tmp.y, r_light_tmp.w, CONST_LIGHT_1_PARAMS.x
+    // TODO: do we need next instruction ?
+    // Length cant be less than 0.
+    max r_light_tmp.y, r_light_tmp.y, CONST_ONE_ZERO.y
+    min r_light_tmp.y, r_light_tmp.y, CONST_ONE_ZERO.x
+    add r_light_tmp.y, -r_light_tmp.y, CONST_ONE_ZERO.x
+    // r_light_tmp.y = intensity_len
+
+    mul r_light_tmp.x, r_light_tmp.x, r_light_tmp.y
+
+    mad r_light_1_result.xyz, CONST_LIGHT_1_COLOR.xyz, r_light_tmp.xxx, r_light_0_result.xyz
+
+#endfragment
+
+// == SPOT ===============================================================
+
+#beginfragment f_lighting_light1_spot
+    add r_light_tmp.xyz, -VERTEX_POSITION, CONST_LIGHT_1_ORG
+    // r_light_tmp.xyz = vertex_to_light
+
+    dp3 r_light_tmp.w, r_light_tmp, r_light_tmp
+    rsq r_light_tmp.w, r_light_tmp.w
+    rcp r_light_tmp2.x, r_light_tmp.w
+    // r_light_tmp2.x = length(vertex_to_light)
+
+    mul r_light_tmp.xyz, r_light_tmp, r_light_tmp.w
+    // r_light_tmp.xyz = vertex_to_light_normalized
+
+    mul r_light_tmp.w, r_light_tmp2.x, CONST_LIGHT_1_PARAMS.x
+    max r_light_tmp.w, r_light_tmp.w, CONST_ONE_ZERO.y
+    min r_light_tmp.w, r_light_tmp.w, CONST_ONE_ZERO.x
+    add r_light_tmp.w, -r_light_tmp.w, CONST_ONE_ZERO.x
+    // r_light_tmp.w = intensity_len = 1 - clamp( length(vertex_to_light)*oo_light_radius, 0, 1 )
+
+    dp3 r_light_tmp2.x, v1, r_light_tmp
+    // r_light_tmp2.x = dot(input.Norm,vertex_to_light_normalized)
+
+    dp3 r_light_tmp.x, CONST_LIGHT_1_DIR, -r_light_tmp
+    // r_light_tmp.x = spot_cos = dot(light_dir,-vertex_to_light_normalized)
+
+    max r_light_tmp.y, r_light_tmp2.x, CONST_ONE_ZERO.y
+    min r_light_tmp.y, r_light_tmp.y, CONST_ONE_ZERO.x
+    // r_light_tmp.y = intensity_norm = clamp( dot(input.Norm,vertex_to_light_normalized), 0, 1 )
+
+    mul r_light_tmp2, r_light_tmp.y, CONST_LIGHT_1_COLOR.xyzz
+    mul r_light_tmp2, r_light_tmp.w, r_light_tmp2
+    // r_light_tmp2 = light_color * intensity_norm * intensity_len
+
+    add r_light_tmp.x, r_light_tmp.x, -CONST_LIGHT_1_PARAMS.y
+    // r_light_tmp.x = spot_cos_base = spot_cos-light_cos_phi
+    mul r_light_tmp.x, r_light_tmp.x, CONST_LIGHT_1_PARAMS.z
+    // r_light_tmp.x = spot_cos_base * oo_light_cos_theta_minus_cos_phi
+    max r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.y
+    min r_light_tmp.x, r_light_tmp.x, CONST_ONE_ZERO.x
+    // // r_light_tmp.x = intensity_spot = clamp( spot_cos_base*oo_light_cos_theta_minus_cos_phi, 0, 1 );
+
+    mad r_light_1_result.xyz, r_light_tmp2, r_light_tmp.xxx, r_light_0_result.xyz
+
+#endfragment
+
+// =======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

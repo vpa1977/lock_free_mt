@@ -1,0 +1,47 @@
+Pentium D 3400
+1 worker :  4.546sec
+2 workers: 2.750sec
+3 workers: 2.656sec
+4 workers: 2.688sec
+
+Athlon X2 4200+
+1 worker:  4.281
+2 workers: 2.375
+3 workers: 2.375
+4 workers: 2.343
+
+Core2 E6300
+1 - 3.92
+2 - 2.12
+3 - 2.2
+4 - 2.2
+
+c2d 6600 (2,4)
+3.31
+1,641
+1,625
+1,625
+
+pentium D 3 GHz
+1 5.78
+2 2.984
+3 3.47
+4 3.63
+
+Intel Core2 Duo T7200 (2GHz)
+1 workers 3sec 750ms
+2 workers 2sec 141ms
+3 workers 2sec 204ms
+4 workers 2sec 109ms
+
+opteron 246 2Ghz.
+4.797
+2.937
+2.937
+2.922
+
+AMD 64 X2 dual 4200
+1. - 4.172
+2. - 2.312
+3. - 2.344
+4. - 2.343

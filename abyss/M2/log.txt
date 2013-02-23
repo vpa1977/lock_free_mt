@@ -1,0 +1,1107 @@
+108360474: CLog::Init()
+108360474: DumpRegisteredSections()
+108360474:   by ClassID:
+108360474:     9890023
+108360474:     10007831
+108360474:     12011977
+108360474:     22011977
+108360474:     33341097
+108360474:     46712090
+108360474:     312879345
+108360474:     633670120
+108360474:     3735928559
+108360474:   by Startup:
+108360474:     1 633670120
+108360474:     0 22011977
+108360474:     0 3735928559
+108360474:     0 9890023
+108360474:     0 312879345
+108360474:     0 12011977
+108360474:     0 33341097
+108360474:     0 46712090
+108360474:     0 10007831
+108360474:   testing Create():
+108360474:     9890023
+108360474:       CRenderCriticalSection
+108360474:     10007831
+108360475:       CObjectSection
+108360475:     12011977
+108360475:       CPreloaderSection
+108360475:     22011977
+108360475:       CVfsSection
+108360475:     33341097
+108360475:       CSunSection
+108360475:     46712090
+108360475:       CStarsSection
+108360475:     312879345
+108360475:       CRenderSection
+108360475:     633670120
+108360475: CGameBaseSection::CGameBaseSection()
+108360475:       CDemoSection( Milestone 2 )
+108360475:     3735928559
+108360475:       CWindowSection
+108360475: DumpRegisteredSections() end
+108360475: CSectionDataStorage::CreateSection()
+108360475:   ClassID = 633670120
+108360475: CGameBaseSection::CGameBaseSection()
+108360475: CGameBaseSection::Reaction( const CCommand_SectionStartup& )
+108360475: CGameBaseSection::Reaction( const CCommand_MTInfo& )
+108360476: CGameBaseSection::Reaction( const CCommand_LaunchThreadsResult& )
+108360476: CSectionDataStorage::CreateSection()
+108360476:   ClassID = 22011977
+108360476:   BOUND and not PARTNER
+108360476:   AllowSearchForOccupiedThreads = 0
+108360476:   LeaveAtleastOneFreeThread = 1
+108360476:   Thread = 0
+108360476: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360476:   in_rResult.m_NewSectionID = 1025
+108360476:   vfs section launched
+108360476: CSectionDataStorage::CreateSection()
+108360476:   ClassID = 12011977
+108360476: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360476:   in_rResult.m_NewSectionID = 1026
+108360476:   preloader section launched
+108360476: CSectionDataStorage::CreateSection()
+108360476:   ClassID = 3735928559
+108360476:   BOUND and not PARTNER
+108360476:   AllowSearchForOccupiedThreads = 0
+108360476:   LeaveAtleastOneFreeThread = 1
+108360476:   Thread = 1
+108360477: CWindowSection::Reaction( const CCommand_SectionStartup& in_rStartupCommand )
+108360477:   ID = 1027
+108360477: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360477:   in_rResult.m_NewSectionID = 1027
+108360477:   window section launched
+108360477: CWindowSection::Reaction( const CCommand_SectionStartup& in_rStartupCommand ) end
+108360477: CWindowSection::Reaction( const CWindowSection_CreateWindow& in_rCreateWindow )
+108360532: CGameBaseSection::Reaction( const CWindowSection_CreateWindowResult& )
+108360532: CSectionDataStorage::CreateSection()
+108360532:   ClassID = 312879345
+108360532: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360532:   in_rResult.m_NewSectionID = 1028
+108360532:   render section launched
+108360532: CRenderSection::Reaction( const CCommand_SectionStartup& in_rStartupCommand )
+108360532:   ID = 1028
+108360533: CRenderSection::Reaction( const CRenderSection_BindToWindow& in_rBind )
+108360533: CSectionDataStorage::CreateSection()
+108360533:   ClassID = 9890023
+108360533:   section 1029 is a partner to window section 1027
+108360533:     1 1
+108360533:     kicking section 1027
+108360533: CRenderSection::Reaction( const CCommand_LaunchSectionResult& in_rLaunchResult )
+108360533:   m_RenderCriticalSectionID = 1029
+108360533:   section 1029 is a partner to window section 1027
+108360533:     1 1
+108360533:     kicking section 1027
+108360533: CRenderCriticalSection::Reaction( const CCommand_SectionStartup& in_rStartupCommand )
+108360533:   ID = 1029
+108360533: CRenderCriticalSection::Reaction( const CRenderCriticalSection_BindToWindow& in_rBind )
+108360533:   srcID = 1028
+108360534: CRenderSection::Reaction( const CRenderCriticalSection_BoundToWindow& in_rBound )
+108360534:   render layer 1 ACTIVATED
+108360534: CRenderSection::Reaction( const CRenderCriticalSection_BoundToWindow& in_rBound ) done
+108360534: CGameBaseSection::Reaction( const CRenderSection_BoundToWindow& )
+108360534: CRenderSection::Reaction( const CRenderSection_Get3DEnvironmentInfo& in_rGetInfo )
+108360534:   thisID = 1028
+108360534:   srcID  = 1024
+108360534:   section 1029 is a partner to window section 1027
+108360534:     1 1
+108360534:     kicking section 1027
+108360534: CRenderCriticalSection::Reaction( const CRenderCriticalSection_Get3DEnvironmentInfo& in_rGetInfo )
+108360557:   Primary display adapter name:
+108360557:     'NVIDIA GeForce 7300 SE'
+108360557:   Primary display adapter has 148 modes.
+108360557:   640x480, 60 hertz, D3DFMT_R5G6B5
+108360557:   640x480, 60 hertz, D3DFMT_X8R8G8B8
+108360557:   320x200, 60 hertz, D3DFMT_R5G6B5
+108360557:   320x200, 70 hertz, D3DFMT_R5G6B5
+108360557:   320x200, 72 hertz, D3DFMT_R5G6B5
+108360557:   320x200, 75 hertz, D3DFMT_R5G6B5
+108360557:   320x240, 60 hertz, D3DFMT_R5G6B5
+108360557:   320x240, 70 hertz, D3DFMT_R5G6B5
+108360557:   320x240, 72 hertz, D3DFMT_R5G6B5
+108360557:   320x240, 75 hertz, D3DFMT_R5G6B5
+108360557:   400x300, 60 hertz, D3DFMT_R5G6B5
+108360557:   400x300, 70 hertz, D3DFMT_R5G6B5
+108360557:   400x300, 72 hertz, D3DFMT_R5G6B5
+108360557:   400x300, 75 hertz, D3DFMT_R5G6B5
+108360557:   480x360, 60 hertz, D3DFMT_R5G6B5
+108360557:   480x360, 70 hertz, D3DFMT_R5G6B5
+108360557:   480x360, 72 hertz, D3DFMT_R5G6B5
+108360557:   480x360, 75 hertz, D3DFMT_R5G6B5
+108360557:   512x384, 60 hertz, D3DFMT_R5G6B5
+108360557:   512x384, 70 hertz, D3DFMT_R5G6B5
+108360557:   512x384, 72 hertz, D3DFMT_R5G6B5
+108360557:   512x384, 75 hertz, D3DFMT_R5G6B5
+108360557:   640x400, 60 hertz, D3DFMT_R5G6B5
+108360557:   640x400, 70 hertz, D3DFMT_R5G6B5
+108360557:   640x400, 72 hertz, D3DFMT_R5G6B5
+108360557:   640x400, 75 hertz, D3DFMT_R5G6B5
+108360557:   640x480, 70 hertz, D3DFMT_R5G6B5
+108360557:   640x480, 72 hertz, D3DFMT_R5G6B5
+108360557:   640x480, 75 hertz, D3DFMT_R5G6B5
+108360557:   720x480, 60 hertz, D3DFMT_R5G6B5
+108360557:   720x576, 60 hertz, D3DFMT_R5G6B5
+108360557:   800x600, 60 hertz, D3DFMT_R5G6B5
+108360557:   800x600, 70 hertz, D3DFMT_R5G6B5
+108360557:   800x600, 72 hertz, D3DFMT_R5G6B5
+108360557:   800x600, 75 hertz, D3DFMT_R5G6B5
+108360557:   848x480, 60 hertz, D3DFMT_R5G6B5
+108360557:   848x480, 70 hertz, D3DFMT_R5G6B5
+108360557:   848x480, 72 hertz, D3DFMT_R5G6B5
+108360557:   848x480, 75 hertz, D3DFMT_R5G6B5
+108360557:   960x600, 60 hertz, D3DFMT_R5G6B5
+108360557:   960x600, 70 hertz, D3DFMT_R5G6B5
+108360557:   960x600, 72 hertz, D3DFMT_R5G6B5
+108360557:   960x600, 75 hertz, D3DFMT_R5G6B5
+108360557:   1024x768, 60 hertz, D3DFMT_R5G6B5
+108360557:   1024x768, 70 hertz, D3DFMT_R5G6B5
+108360557:   1024x768, 72 hertz, D3DFMT_R5G6B5
+108360557:   1024x768, 75 hertz, D3DFMT_R5G6B5
+108360557:   1088x612, 60 hertz, D3DFMT_R5G6B5
+108360557:   1088x612, 70 hertz, D3DFMT_R5G6B5
+108360557:   1088x612, 72 hertz, D3DFMT_R5G6B5
+108360557:   1088x612, 75 hertz, D3DFMT_R5G6B5
+108360557:   1152x864, 60 hertz, D3DFMT_R5G6B5
+108360557:   1152x864, 70 hertz, D3DFMT_R5G6B5
+108360557:   1152x864, 72 hertz, D3DFMT_R5G6B5
+108360557:   1152x864, 75 hertz, D3DFMT_R5G6B5
+108360557:   1280x720, 60 hertz, D3DFMT_R5G6B5
+108360557:   1280x720, 70 hertz, D3DFMT_R5G6B5
+108360557:   1280x720, 72 hertz, D3DFMT_R5G6B5
+108360557:   1280x720, 75 hertz, D3DFMT_R5G6B5
+108360557:   1280x768, 60 hertz, D3DFMT_R5G6B5
+108360557:   1280x768, 70 hertz, D3DFMT_R5G6B5
+108360557:   1280x768, 72 hertz, D3DFMT_R5G6B5
+108360557:   1280x768, 75 hertz, D3DFMT_R5G6B5
+108360557:   1280x800, 60 hertz, D3DFMT_R5G6B5
+108360557:   1280x800, 70 hertz, D3DFMT_R5G6B5
+108360557:   1280x800, 72 hertz, D3DFMT_R5G6B5
+108360557:   1280x800, 75 hertz, D3DFMT_R5G6B5
+108360557:   1280x960, 60 hertz, D3DFMT_R5G6B5
+108360557:   1280x960, 70 hertz, D3DFMT_R5G6B5
+108360557:   1280x960, 72 hertz, D3DFMT_R5G6B5
+108360557:   1280x960, 75 hertz, D3DFMT_R5G6B5
+108360557:   1280x1024, 60 hertz, D3DFMT_R5G6B5
+108360558:   1280x1024, 70 hertz, D3DFMT_R5G6B5
+108360558:   1280x1024, 72 hertz, D3DFMT_R5G6B5
+108360558:   1280x1024, 75 hertz, D3DFMT_R5G6B5
+108360558:   320x200, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   320x200, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   320x200, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   320x200, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   320x240, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   320x240, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   320x240, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   320x240, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   400x300, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   400x300, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   400x300, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   400x300, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   480x360, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   480x360, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   480x360, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   480x360, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   512x384, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   512x384, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   512x384, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   512x384, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   640x400, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   640x400, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   640x400, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   640x400, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   640x480, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   640x480, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   640x480, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   720x480, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   720x576, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   800x600, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   800x600, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   800x600, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   800x600, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   848x480, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   848x480, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   848x480, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   848x480, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   960x600, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   960x600, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   960x600, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   960x600, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1024x768, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1024x768, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1024x768, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1024x768, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1088x612, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1088x612, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1088x612, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1088x612, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1152x864, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1152x864, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1152x864, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1152x864, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x720, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x720, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x720, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x720, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x768, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x768, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x768, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x768, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x800, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x800, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x800, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x800, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x960, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x960, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x960, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x960, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x1024, 60 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x1024, 70 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x1024, 72 hertz, D3DFMT_X8R8G8B8
+108360558:   1280x1024, 75 hertz, D3DFMT_X8R8G8B8
+108360558:   Primary display adapter CAN render windowed.
+108360558:   Current display mode: 1280x1024, 72 hertz, D3DFMT_R5G6B5
+108360558:   16bit:
+108360558:     Depth        = YES
+108360558:     DepthStencil = no
+108360558:   32bit:
+108360558:     Depth        = YES
+108360558:     DepthStencil = YES
+108360559: CRenderSection::Reaction( const CRenderCriticalSection_3DEnvironmentInfo& in_rInfo )
+108360559: CRenderSection::Reaction( const CRenderCriticalSection_3DEnvironmentInfo& in_rInfo ) end
+108360559: CRenderCriticalSection::Reaction( const CRenderCriticalSection_Get3DEnvironmentInfo& in_rGetInfo ) end
+108360559: CGameBaseSection::Reaction( const CRenderSection_3DEnvironmentInfo& )
+108360559: CRenderSection::Reaction( const CRenderSection_InitRender& in_rInit )
+108360559:   section 1029 is a partner to window section 1027
+108360559:     1 1
+108360559:     kicking section 1027
+108360559: CRenderCriticalSection::Reaction( const CRenderSection_InitRender& in_rInit )
+108360559:   width  = 640
+108360559:   height = 480
+108360559:   windowed = yes
+108360559:   depth   = yes
+108360559:   stencil = no
+108360559:   refresh = 60
+108360559:   vsync = no
+108360593:   CRenderCriticalSection::TryToCreateDevice()
+108360593:     hardware vertex processing requested
+108360593:     ChooseDepthFormat()
+108360593:       16bit
+108360593:         D3DFMT_D16
+108360631:     SUCCESS (Res=0)
+108360631: CRenderSection::Reaction( const CRenderSection_InitRenderResult& in_rResult )
+108360631: CRenderDX8::SetInterface()
+108360631:   in_pD3D8        = 0015D420
+108360631:   in_pD3D8Device  = 00165E60
+108360631:   D3DFMT_X8R8G8B8 = no
+108360631:   D3DFMT_R5G6B5   = YES
+108360631:   D3DFMT_UNKNOWN  = no
+108360631:   RVP_SOFTWARE    = no
+108360631:   RVP_MIXED       = no
+108360631:   RVP_HARDWARE    = YES
+108360631:   ChooseTextureFormats()
+108360631:     D3DFMT_X8R8G8B8    - YES
+108360631:     D3DFMT_R8G8B8      - no
+108360631:     D3DFMT_R5G6B5      - YES
+108360631:     D3DFMT_X1R5G5B5    - YES
+108360631:     D3DFMT_X4R4G4B4    - no
+108360631:     D3DFMT_A8R8G8B8    - YES
+108360631:     D3DFMT_A4R4G4B4    - YES
+108360631:     D3DFMT_A8R3G3B2    - no
+108360631:     D3DFMT_A2B10G10R10 - no
+108360631:   render layer 2 ACTIVATED
+108360631: CRenderSection::Reaction( const CRenderSection_InitRenderResult& in_rResult ) end
+108360631: CGameBaseSection::Reaction( const CRenderSection_InitRenderResult& )
+108360645: CDemoSection::ParseConfig()
+108360645:   stroka = 'stars stars.txt'
+108360645:   stroka = 'sun sun.txt'
+108360645:   stroka = 'planet mercury.txt'
+108360645:   stroka = 'planet venus.txt'
+108360645:   stroka = 'planet earth.txt'
+108360645:   stroka = 'planet mars.txt'
+108360645:   stroka = 'planet jupiter.txt'
+108360645:   stroka = 'planet saturn.txt'
+108360645:   stroka = 'planet uranus.txt'
+108360645:   stroka = 'planet neptune.txt'
+108360645:   stroka = 'planet pluto.txt'
+108360645: CSectionDataStorage::CreateSection()
+108360645:   ClassID = 46712090
+108360645: CSectionDataStorage::CreateSection()
+108360645:   ClassID = 33341097
+108360645: 108360645: CSunSection::Reaction( const CCommand_SectionStartup& )
+CSectionDataStorage::CreateSection()
+108360645: 108360645:   ClassID = 10007831
+  sectionID = 1031
+108360646: CStarsSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1030
+108360646:   ClassID = 10007831
+108360646: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1032
+108360646: 108360646:   ClassID = 10007831
+Enter: 
+108360646: Exit: 
+108360646: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1033
+108360646: 108360646:   ClassID = 10007831
+Enter: 
+108360646: Exit: 
+108360646: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1034
+108360646: 108360646: Enter:   ClassID = 10007831
+
+108360646: Exit: 
+108360646: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1035
+108360646: 108360646:   ClassID = 10007831
+Enter: 
+108360646: Exit: 
+108360646: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360646: 108360646: CSectionDataStorage::CreateSection()
+  sectionID = 1036
+108360646: 108360646:   ClassID = 10007831
+Enter: 
+108360646: Exit: 
+108360647: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360647:   sectionID = 1037
+108360647: Enter: 
+108360647: Exit: 
+108360647: CSectionDataStorage::CreateSection()
+108360647:   ClassID = 10007831
+108360647: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360647: 108360647: CSectionDataStorage::CreateSection()
+  sectionID = 1038
+108360647: 108360647:   ClassID = 10007831
+Enter: 
+108360647: Exit: 
+108360647: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360647:   sectionID = 1039
+108360647: Enter: 
+108360647: Exit: 
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360647:   sectionID = 1040
+108360647: Enter: 
+108360647: Exit: 
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CGameBaseSection::Reaction( const CCommand_LaunchSectionResult& )
+108360647: CDemoSection::Received_SectionLaunchResult()
+108360647:   awaiting worker
+108360647: CDemoSection::SendWorkerInitCommands()
+108360647: CSunSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360647:   config='/data/sun.txt'
+108360647:   sending Open config
+108360648: CStarsSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360648:   config='/data/stars.txt'
+108360648:   sending Open config
+108360648: Enter: 
+108360648: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360648:   config file: 'mercury.txt'
+108360648: Exit: 
+108360648: Enter: 
+108360648: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360648:   config file: 'venus.txt'
+108360648: Exit: 
+108360648: Enter: 
+108360648: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360648:   config file: 'earth.txt'
+108360648: Exit: 
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'mars.txt'
+108360649: CSunSection::Reaction( const CVFSSection_OpenResponse& )
+108360649: 108360649:   url='/data/sun.txt'
+Exit: 
+108360649:   Config opened
+108360649:   sending Read config
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'jupiter.txt'
+108360649: Exit: 
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'saturn.txt'
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'neptune.txt'
+108360649: Exit: 
+108360649: Exit: 
+108360649: CStarsSection::Reaction( const CVFSSection_OpenResponse& )
+108360649:   url='/data/stars.txt'
+108360649:   Config opened
+108360649:   sending Read config
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'uranus.txt'
+108360649: Enter: 
+108360649: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360649:   config file: 'pluto.txt'
+108360649: Exit: 
+108360649: Exit: 
+108360649: Enter: 
+108360649: Exit: 
+108360649: Enter: 
+108360650: Exit: 
+108360650: Enter: 
+108360650: Enter: 
+108360650: Exit: 
+108360650: Exit: 
+108360650: CSunSection::Reaction( const CVFSSection_ReadResponse& )
+108360650: Enter: 
+108360650:   Config read
+108360650:   sending Open texture file
+108360650: Exit: 
+108360650: Enter: 
+108360650: Exit: 
+108360650: Enter: 
+108360650: Exit: 
+108360651: CStarsSection::Reaction( const CVFSSection_ReadResponse& )
+108360651:   Config read
+108360651:   sending Open catalog
+108360651:   sending Open texture file
+108360651: Enter: 
+108360651: Exit: 
+108360651: Enter: 
+108360651: Exit: 
+108360652: Enter: 
+108360652: Enter: 
+108360652: Exit: 
+108360652: Exit: 
+108360652: Enter: 
+108360652: CSectionDataStorage::CreateSection()
+108360652:   ClassID = 10007831
+108360652: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360652:   sectionID = 1041
+108360652: Enter: 
+108360652: 108360652: Exit: 
+Exit: 
+108360652: Enter: 
+108360652: Enter: 
+108360652: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360653:   config file: 'moon.txt'
+108360653: Exit: 
+108360653: CSunSection::Reaction( const CVFSSection_CloseResponse& )
+108360653: Exit: 
+108360653: Enter: 
+108360653: CSunSection::Reaction( const CVFSSection_OpenResponse& )
+108360653:   url='/data/sun.jpg'
+108360653:   Texture file opened
+108360653: 108360653: Exit:   sending Decode texture file
+
+108360653: Enter: 
+108360653: CSectionDataStorage::CreateSection()
+108360653:   ClassID = 10007831
+108360654: CObjectSection::Reaction( const CCommand_SectionStartup& )
+108360654:   sectionID = 1042
+108360654: Enter: 
+108360654: Exit: 
+108360654: Exit: 
+108360654: Enter: 
+108360654: Enter: 
+108360654: CObjectSection::Reaction( const CDemoSection_WorkerInit_Request& )
+108360654:   config file: 'disk.txt'
+108360654: Exit: 
+108360654: Exit: 
+108360654: CStarsSection::Reaction( const CVFSSection_CloseResponse& )
+108360654: CStarsSection::Reaction( const CVFSSection_OpenResponse& )
+108360654:   url='/data/catalog.txt'
+108360654:   Catalog opened
+108360654:   sending Read catalog
+108360654: CStarsSection::Reaction( const CVFSSection_OpenResponse& )
+108360654:   url='/data/star.jpg'
+108360654:   Texture file opened
+108360654:   sending Decode texture file
+108360654: Enter: 
+108360655: Exit: 
+108360655: Enter: 
+108360657: Enter: 
+108360657: Exit: 
+108360657: Enter: 
+108360658: Exit: 
+108360658: Enter: 
+108360658: Exit: 
+108360658: Enter: 
+108360658: Exit: 
+108360658: VFS File closed: 4
+108360658: VFS File closed: 5
+108360658: Enter: 
+108360658: Exit: 
+108360659: Enter: 
+108360659: Exit: 
+108360659: Enter: 
+108360659: Exit: 
+108360659: VFS File closed: 6
+108360659: Enter: 
+108360659: Exit: 
+108360659: Enter: 
+108360659: Exit: 
+108360659: Enter: 
+108360659: Exit: 
+108360661: Exit: 
+108360662: Enter: 
+108360662: Exit: 
+108360662: Enter: 
+108360662: Exit: 
+108360662: Enter: 
+108360662: Exit: 
+108360665: Enter: 
+108360665: Exit: 
+108360665: Enter: 
+108360665: Exit: 
+108360666: VFS File closed: 7
+108360666: VFS File closed: 8
+108360666: VFS File closed: 9
+108360666: Enter: 
+108360666: CSunSection::Reaction( const CPreloaderSection_DecodeResponse& )
+108360666:   sending CreateTexture
+108360667: Exit: 
+108360667: CStarsSection::Reaction( const CVFSSection_ReadResponse& )
+108360667:   Catalog read
+108360667:   CStarsSection::ParseStarsCatalog()
+108360667: Enter: 
+108360667: Exit: 
+108360667: VFS File closed: 10
+108360667: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360667:   generated 1 mipmap levels
+108360667: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360667: Enter: 
+108360667: Exit: 
+108360667: CSunSection::Reaction( const CRenderSection_CreateTexture_Response& )
+108360667:   sending Create PS
+108360668: Enter: 
+108360668: Exit: 
+108360668: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360669: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360669:   pPS=00fc7008
+108360669:   NPasses=1
+108360669:   Pass 0
+108360669:     NStates=10
+108360669:     filling
+108360669:     filled
+108360671: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360671: VFS File closed: 11
+108360672: CSunSection::Reaction( const CRenderSection_CreatePixelShader_Response& )
+108360676: Enter: 
+108360677:   1000 stars
+108360678:   sending Create VB
+108360680: Enter: 
+108360707: Exit: 
+108360707: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360707: CRenderDX8::CreateVertexBuffer()
+108360707:   untransformed vertices
+108360707:   diffuse
+108360707:   texture0( 2 dimension(s) )
+108360707: CRenderDX8::GetTextureFVF( 0, 2 )
+108360707:   total 1 textures
+108360710: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360710: Enter: 
+108360710: Exit: 
+108360710: Exit: 
+108360710: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360710: CRenderDX8::CreateVertexBuffer()
+108360710:   untransformed vertices
+108360710:   texture0( 2 dimension(s) )
+108360710: CRenderDX8::GetTextureFVF( 0, 2 )
+108360710:   total 1 textures
+108360713: Enter: 
+108360716: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360716: CStarsSection::Reaction( const CPreloaderSection_DecodeResponse& )
+108360716:   sending CreateTexture
+108360716: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360716: CRenderDX8::CreateVertexBuffer()
+108360716:   untransformed vertices
+108360716:   normal
+108360716:   diffuse
+108360716:   texture0( 2 dimension(s) )
+108360716: CRenderDX8::GetTextureFVF( 0, 2 )
+108360716:   total 1 textures
+108360730: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360731: Enter: 
+108360742: Exit: 
+108360742: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360742: CRenderDX8::CreateVertexBuffer()
+108360742:   untransformed vertices
+108360742:   normal
+108360742:   diffuse
+108360742:   texture0( 2 dimension(s) )
+108360742: CRenderDX8::GetTextureFVF( 0, 2 )
+108360742:   total 1 textures
+108360745: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360745: Enter: 
+108360770: Exit: 
+108360771: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360771:   generated 1 mipmap levels
+108360771: Exit: 
+108360771: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360771: CStarsSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360771: CStarsSection::CheckForInitializationCompletion()
+108360772: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360772: CRenderDX8::CreateVertexBuffer()
+108360772:   untransformed vertices
+108360772:   normal
+108360772:   diffuse
+108360772: 108360772: CStarsSection::Reaction( const CVFSSection_CloseResponse& )
+  texture0( 2 dimension(s) )
+108360772: CRenderDX8::GetTextureFVF( 0, 2 )
+108360772:   total 1 textures
+108360772: VFS File closed: 12
+108360772: Enter: 
+108360774: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360775: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360775: CRenderDX8::CreateVertexBuffer()
+108360775:   untransformed vertices
+108360775:   normal
+108360775:   diffuse
+108360775:   texture0( 2 dimension(s) )
+108360775: CRenderDX8::GetTextureFVF( 0, 2 )
+108360775:   total 1 textures
+108360785: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360785: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360785: CRenderDX8::CreateVertexBuffer()
+108360785:   untransformed vertices
+108360785:   normal
+108360785:   diffuse
+108360785:   texture0( 2 dimension(s) )
+108360785: CRenderDX8::GetTextureFVF( 0, 2 )
+108360785:   total 1 textures
+108360787: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360789:   generated 1 mipmap levels
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360789: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360789:   VB handle = 4
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360789:   generated 1 mipmap levels
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360789: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360789:   VB handle = 3
+108360789: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360789:   VB handle = 5
+108360789: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360789:   VB handle = 6
+108360789: VFS File closed: 16
+108360789: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360789:   VB handle = 7
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360789:   generated 1 mipmap levels
+108360789: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360790: VFS File closed: 17
+108360790: VFS File closed: 20
+108360790: Enter: 
+108360802: Exit: 
+108360802: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360802:   generated 1 mipmap levels
+108360802: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360802: VFS File closed: 22
+108360802: ==========================================================================
+108360802: CSunSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360802: ==========================================================================
+108360803: CSunSection::Reaction( const CVFSSection_CloseResponse& )
+108360803: CStarsSection::Reaction( const CVFSSection_CloseResponse& )
+108360803: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360803:   generated 1 mipmap levels
+108360803: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360803: VFS File closed: 25
+108360804: Enter: 
+108360813: Exit: 
+108360813: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360813: CRenderDX8::CreateVertexBuffer()
+108360813:   untransformed vertices
+108360813:   normal
+108360813:   diffuse
+108360813:   texture0( 2 dimension(s) )
+108360813: CRenderDX8::GetTextureFVF( 0, 2 )
+108360813:   total 1 textures
+108360821: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360821: VFS File closed: 27
+108360821: VFS File closed: 18
+108360822: VFS File closed: 19
+108360822: VFS File closed: 21
+108360822: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360822:   generated 1 mipmap levels
+108360822: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360822: VFS File closed: 28
+108360822: VFS File closed: 24
+108360822: VFS File closed: 26
+108360822: VFS File closed: 29
+108360822: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360822: CRenderDX8::CreateVertexBuffer()
+108360822:   untransformed vertices
+108360822:   normal
+108360822:   diffuse
+108360822:   texture0( 2 dimension(s) )
+108360822: CRenderDX8::GetTextureFVF( 0, 2 )
+108360822:   total 1 textures
+108360835: Exit: 
+108360835: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360836: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360836:   generated 1 mipmap levels
+108360836: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360836: VFS File closed: 31
+108360836: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360836:   VB handle = 8
+108360836: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360836: CRenderDX8::CreateVertexBuffer()
+108360836:   untransformed vertices
+108360836:   normal
+108360836:   diffuse
+108360836:   texture0( 2 dimension(s) )
+108360836: CRenderDX8::GetTextureFVF( 0, 2 )
+108360836:   total 1 textures
+108360836: VFS File closed: 32
+108360837: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360837:   VB handle = 9
+108360838: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360838: Enter: 
+108360839: VFS File closed: 33
+108360839: Enter: 
+108360839: Exit: 
+108360839: Exit: 
+108360839: Enter: 
+108360839: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360839:   sectionID = 1031
+108360839:   success   = YES
+108360839: Enter: 
+108360839: Exit: 
+108360839: Enter: 
+108360839: Exit: 
+108360840: Enter: 
+108360840: Exit: 
+108360844: Enter: 
+108360844: Exit: 
+108360844: VFS File closed: 23
+108360844: VFS File closed: 30
+108360844: CStarsSection::Reaction( const CRenderSection_CreateTexture_Response& )
+108360844:   sending Create PS
+108360844: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360844:   generated 1 mipmap levels
+108360844: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360844: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360844:   VB handle = 10
+108360845: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360845:   ThisID() = 1032
+108360845:   texHandle = 3
+108360845: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360845: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360845:   pPS=00fc7070
+108360845:   NPasses=1
+108360845:   Pass 0
+108360845:     NStates=9
+108360845:     filling
+108360845:     filled
+108360845: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360845: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360845:   ThisID() = 1033
+108360845:   texHandle = 4
+108360846: Enter: 
+108360870: Exit: 
+108360870: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360870: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360870:   pPS=01265040
+108360870:   NPasses=1
+108360870:   Pass 0
+108360870:     NStates=10
+108360870:     filling
+108360870:     filled
+108360870: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360870: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360870: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360870:   pPS=01265070
+108360870:   NPasses=1
+108360870:   Pass 0
+108360870:     NStates=10
+108360870:     filling
+108360870:     filled
+108360870: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360870: VFS File closed: 36
+108360870: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360870: CRenderDX8::CreateVertexBuffer()
+108360870:   untransformed vertices
+108360870:   normal
+108360870:   diffuse
+108360870:   texture0( 2 dimension(s) )
+108360870: CRenderDX8::GetTextureFVF( 0, 2 )
+108360870:   total 1 textures
+108360873: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360873: VFS File closed: 38
+108360873: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360873:   ThisID() = 1034
+108360873:   texHandle = 5
+108360873: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360873:   generated 1 mipmap levels
+108360873: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360873: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360873:   VB handle = 11
+108360873: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360873:   ThisID() = 1035
+108360873:   texHandle = 6
+108360873: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360873: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360873:   pPS=012650a0
+108360873:   NPasses=1
+108360873:   Pass 0
+108360873:     NStates=10
+108360873:     filling
+108360873:     filled
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360874: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360874:   ThisID() = 1036
+108360874:   texHandle = 7
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360874: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360874:   pPS=012650d0
+108360874:   NPasses=1
+108360874:   Pass 0
+108360874:     NStates=10
+108360874:     filling
+108360874:     filled
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360874: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360874:   ThisID() = 1037
+108360874:   texHandle = 8
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360874: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360874:   pPS=01265100
+108360874:   NPasses=1
+108360874:   Pass 0
+108360874:     NStates=10
+108360874:     filling
+108360874:     filled
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360874: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360874:   ThisID() = 1039
+108360874:   texHandle = 9
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360874: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360874:   pPS=0039f918
+108360874:   NPasses=1
+108360874:   Pass 0
+108360874:     NStates=10
+108360874:     filling
+108360874:     filled
+108360874: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360874: Exit: 
+108360875: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360875: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360875:   pPS=0039f948
+108360875:   NPasses=1
+108360875:   Pass 0
+108360875:     NStates=10
+108360875:     filling
+108360875:     filled
+108360875: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360876: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360876: CRenderDX8::CreateVertexBuffer()
+108360876:   untransformed vertices
+108360876:   normal
+108360876:   diffuse
+108360876:   texture0( 2 dimension(s) )
+108360876: CRenderDX8::GetTextureFVF( 0, 2 )
+108360876:   total 1 textures
+108360878: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360878: VFS File closed: 34
+108360878: VFS File closed: 35
+108360878: Enter: 
+108360878: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360879:   generated 1 mipmap levels
+108360879: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360879: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360879:   VB handle = 12
+108360879: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360879:   ThisID() = 1038
+108360879:   texHandle = 10
+108360879: CStarsSection::Reaction( const CRenderSection_CreatePixelShader_Response& )
+108360879: CStarsSection::CheckForInitializationCompletion()
+108360879:   sending Response
+108360879: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360879:   sectionID = 1030
+108360879:   success   = YES
+108360879: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360879:   m_PSHandle = 3
+108360879: Starting Up Celestial object with 1 renderables 
+108360880: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360880:   sectionID = 1032
+108360880:   success   = YES
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 4
+108360880: Starting Up Celestial object with 1 renderables 
+108360880: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360880:   sectionID = 1033
+108360880:   success   = YES
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360880:   ThisID() = 1041
+108360880:   texHandle = 11
+108360880: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360880: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360880:   pPS=00fc3fc0
+108360880:   NPasses=1
+108360880:   Pass 0
+108360880:     NStates=10
+108360880:     filling
+108360880:     filled
+108360880: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 5
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 6
+108360880: Starting Up Celestial object with 1 renderables 
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 7
+108360880: Starting Up Celestial object with 1 renderables 
+108360880: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360880:   sectionID = 1035
+108360880:   success   = YES
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 8
+108360880: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360880:   m_PSHandle = 9
+108360880: Starting Up Celestial object with 1 renderables 
+108360881: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360881:   sectionID = 1036
+108360881:   success   = YES
+108360881: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360881:   ThisID() = 1040
+108360881:   texHandle = 12
+108360881: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360881: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360881:   pPS=00fc3ff0
+108360881:   NPasses=1
+108360881:   Pass 0
+108360881:     NStates=10
+108360881:     filling
+108360881:     filled
+108360881: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360881: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360881:   sectionID = 1039
+108360881:   success   = YES
+108360881: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360881:   m_PSHandle = 10
+108360881: Starting Up Celestial object with 1 renderables 
+108360881: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360881:   sectionID = 1038
+108360881:   success   = YES
+108360882: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360882: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360882:   pPS=0039f990
+108360882:   NPasses=1
+108360882:   Pass 0
+108360882:     NStates=10
+108360882:     filling
+108360882:     filled
+108360882: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360882: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360882:   m_PSHandle = 11
+108360882: Starting Up Celestial object with 1 renderables 
+108360882: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360882:   m_PSHandle = 12
+108360882: Starting Up Celestial object with 1 renderables 
+108360883: Starting Up Celestial object with 2 renderables 
+108360883: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360883:   sectionID = 1040
+108360883:   success   = YES
+108360883: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360883:   sectionID = 1034
+108360883:   success   = YES
+108360901: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd )
+108360901: CRenderDX8::CreateVertexBuffer()
+108360901:   untransformed vertices
+108360902:   diffuse
+108360902:   texture0( 2 dimension(s) )
+108360902: CRenderDX8::GetTextureFVF( 0, 2 )
+108360902:   total 1 textures
+108360901: Exit: 
+108360905: CRenderSection::Reaction( const CRenderSection_CreateVertexBuffer_Request& in_rCmd ) end
+108360905: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd )
+108360906:   generated 1 mipmap levels
+108360906: CRenderSection::Reaction( const CRenderSection_CreateTexture_Request& in_rCmd ) end
+108360906: VFS File closed: 37
+108360906: DemoSection::Reaction( const CRenderSection_CreateVertexBuffer_Response& )
+108360906:   VB handle = 13
+108360907: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreateTexture_Response& )
+108360907:   ThisID() = 1042
+108360907:   texHandle = 13
+108360907: VFS File closed: 39
+108360907: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd )
+108360907: CRenderDX8PixelShaderManager::CreatePixelShader()
+108360907:   pPS=01297ea0
+108360907:   NPasses=1
+108360907:   Pass 0
+108360907:     NStates=10
+108360907:     filling
+108360907:     filled
+108360907: void CObjectSection::Reaction( long in_SrcSectionID, const CRenderSection_CreatePixelShader_Response& )108360907:   m_PSHandle = 13
+108360907: Starting Up Celestial object with 1 renderables 
+108360907: CRenderSection::Reaction( const CRenderSection_CreatePixelShader_Request& in_rCmd ) end
+108360907: Starting Up Celestial object with 2 renderables 
+108360908: CDemoSection::Reaction( const CDemoSection_WorkerInit_Response& )
+108360908:   sectionID = 1037
+108360908:   success   = YES
+108360908:   entering main render loop
+108394014: CGameBaseSection::Reaction( const CWindowSection_WindowClosed& )
+108394026: CRenderSection::Reaction( const CRenderSection_WindowClosed& in_rWindowClosed )
+108394026:   thisID = 1028
+108394026:   srcID  = 1024
+108394045:   render layer 2 DEACTIVATED
+108394045:   render layer 1 DEACTIVATED
+108394045: CRenderCriticalSection::Reaction( const CRenderCriticalSection_UnbindAndDie& in_rDie )
+108394045:   thisID = 1029
+108394045:   srcID  = 1028
+108394046: ============================= WINDOW CLOSED ======================
+108394048: section 1032 quit on thread 2
+108394049: Section 1032 quit. Killing all it's timers.
+108394049: section 1039 quit on thread 2
+108394049: Section 1039 quit. Killing all it's timers.
+108394049: CStarsSection::Reaction( const CDemoSection_WorkerShutdown_Request& )
+108394049:   m_pD3D8Device released
+108394049:   m_pD3D8 released
+108394049: CRenderCriticalSection::Reaction( const CRenderCriticalSection_UnbindAndDie& in_rDie ) end
+108394049: section 1029 quit on thread 1
+108394049: Section 1029 quit. Killing all it's timers.
+108394049: section 1033 quit on thread 3
+108394049: Section 1033 quit. Killing all it's timers.
+108394049: CSunSection::Reaction( const CDemoSection_WorkerShutdown_Request& )
+108394050: section 1031 quit on thread 3
+108394050: Section 1031 quit. Killing all it's timers.
+108394050: section 1034 quit on thread 2
+108394050: Section 1034 quit. Killing all it's timers.
+108394050: section 1035 quit on thread 2
+108394050: Section 1035 quit. Killing all it's timers.
+108394050: section 1036 quit on thread 2
+108394050: Section 1036 quit. Killing all it's timers.
+108394050: section 1037 quit on thread 2
+108394050: Section 1037 quit. Killing all it's timers.
+108394050: section 1040 quit on thread 2
+108394050: Section 1040 quit. Killing all it's timers.
+108394050: section 1038 quit on thread 2
+108394050: Section 1038 quit. Killing all it's timers.
+108394050: section 1041 quit on thread 2
+108394050: Section 1041 quit. Killing all it's timers.
+108394050: section 1042 quit on thread 3
+108394050: Section 1042 quit. Killing all it's timers.
+108394050: CThreadsData::WakeUpAllThreads()
+108394050: CThreadsData::WakeUpAllThreads()
+108394051: CThreadsData::WakeUpAllThreads()
+108394051: CThreadsData::WakeUpAllThreads()
+108394053: CLog::Close()

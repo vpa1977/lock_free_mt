@@ -1,0 +1,11 @@
+D3DFVF_XYZ D3DFVF_NORMAL D3DFVF_DIFFUSE D3DFVF_TEX0
+R8PRIM_TRIANGLE_LIST
+
+# X+
+ 0 -1  1     1  0  0    ff0000    0.0 1.0
+ 0  1  1     1  0  0    00ff00    1.0 1.0
+ 0  1 -1     1  0  0    0000ff    1.0 0.0
+
+ 0 -1  1     1  0  0    ff0000    0.0 1.0
+ 0  1 -1     1  0  0    0000ff    1.0 0.0
+ 0 -1 -1     1  0  0    ffff00    0.0 0.0

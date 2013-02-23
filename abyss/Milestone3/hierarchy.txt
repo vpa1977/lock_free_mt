@@ -1,0 +1,9 @@
+CM3Section - load & render proxy
+	CWorld
+		CStarField - zvezdi
+		CGameDevice (+)
+			CGameBox - ramka (+)
+			CGameUnit - fishki (+)
+		CPositionReminder - napominalka o pravilnoj sobrannoj pozicii
+		CMoveCounter - s4et4ik hodov (+)
+		CShuffleReminder - napominalka o Shuffle (+)

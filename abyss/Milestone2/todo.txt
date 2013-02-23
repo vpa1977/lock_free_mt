@@ -1,0 +1,6 @@
+
+1. process visit posle zakrytija prilozhenija
+2. texture coordinates
+3. crash u Nechi
+4. release sequence
+5. command CWorker_DieNow

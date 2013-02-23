@@ -1,0 +1,14 @@
+; Khumaak !
+model=sphere.txt
+texture=jupiter.jpg
+radius=18	
+selfSpeed=0.1
+velocity=0.013
+size=2
+angle=0.78
+point=1.4
+
+
+
+
+

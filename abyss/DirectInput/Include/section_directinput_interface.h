@@ -1,0 +1,9 @@
+#ifndef SECTION_DIRECTINPUT_INTERFACE_HPP
+
+#define SECTION_DIRECTINPUT_INTERFACE_HPP
+
+
+#define CDirectInputSection_CLSID 13011977
+
+
+#endif

@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=pluto.jpg
+radius=35
+selfSpeed=0.1
+velocity=0.0048
+size=0.5
+point=3
+
+
+
+
+

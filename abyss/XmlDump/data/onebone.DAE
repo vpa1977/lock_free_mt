@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Vladimir</author>
+      <authoring_tool>3dsMax 9 - Feeling ColladaMax v3.04C.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=0;ExportTangents=1;ExportAnimations=1;SampleAnim=0;ExportAnimClip=1;BakeMatrices=1;ExportRelativePaths=1;AnimStart=0;AnimEnd=16000;</comments>
+    </contributor>
+    <created>2008-04-17T20:49:11Z</created>
+    <modified>2008-04-17T20:49:13Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_animations>
+    <animation id="Bone01-node-transform">
+      <source id="Bone01-node-transform_Bone01-node_transform-input">
+        <float_array id="Bone01-node-transform_Bone01-node_transform-input-array" count="101">0 0.033333 0.066666 0.1 0.133333 0.166667 0.2 0.233333 0.266667 0.3 0.333333 0.366667 0.4 0.433333 0.466667 0.5 0.533333 0.566667 0.6 0.633333 0.666667 0.7 0.733333 0.766667 0.8 0.833333 0.866667 0.9 0.933333 0.966667 1 1.03333 1.06667 1.1 1.13333 1.16667 1.2 1.23333 1.26667 1.3 1.33333 1.36667 1.4 1.43333 1.46667 1.5 1.53333 1.56667 1.6 1.63333 1.66667 1.7 1.73333 1.76667 1.8 1.83333 1.86667 1.9 1.93333 1.96667 2 2.03333 2.06667 2.1 2.13333 2.16667 2.2 2.23333 2.26667 2.3 2.33333 2.36667 2.4 2.43333 2.46667 2.5 2.53333 2.56667 2.6 2.63333 2.66667 2.7 2.73333 2.76667 2.8 2.83333 2.86667 2.9 2.93333 2.96667 3 3.03333 3.06667 3.1 3.13333 3.16667 3.2 3.23333 3.26667 3.3 3.33333</float_array>
+        <technique_common>
+          <accessor source="#Bone01-node-transform_Bone01-node_transform-input-array" count="101" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+        <technique profile="MAYA">
+          <pre_infinity>CONSTANT</pre_infinity>
+          <post_infinity>CONSTANT</post_infinity>
+        </technique>
+      </source>
+      <source id="Bone01-node-transform_Bone01-node_transform-output">
+        <float_array id="Bone01-node-transform_Bone01-node_transform-output-array" count="1616">-0.000000 0 -1.40635 3.66148 -1.40573 0.041835 0.000000 -18.2016 0.041835 1.40573 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40575 0.041043 0.000000 -18.2016 0.041043 1.40575 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40581 0.038801 0.000000 -18.2016 0.038801 1.40581 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40591 0.035309 0.000000 -18.2016 0.035309 1.40591 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40601 0.030768 0.000000 -18.2016 0.030768 1.40601 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40612 0.02538 0.000000 -18.2016 0.02538 1.40612 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40622 0.019344 0.000000 -18.2016 0.019344 1.40622 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40629 0.012862 0.000000 -18.2016 0.012862 1.40629 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40634 0.006135 0.000000 -18.2016 0.006135 1.40634 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40635 -0.000635 0.000000 -18.2016 -0.000635 1.40635 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40633 -0.007249 0.000000 -18.2016 -0.007249 1.40633 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40627 -0.015199 0.000000 -18.2016 -0.015199 1.40627 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40611 -0.026065 0.000000 -18.2016 -0.026065 1.40611 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40579 -0.039777 0.000000 -18.2016 -0.039777 1.40579 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40522 -0.056266 0.000000 -18.2016 -0.056266 1.40522 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40432 -0.075456 0.000000 -18.2016 -0.075456 1.40432 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40298 -0.097272 0.000000 -18.2016 -0.097272 1.40298 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.40108 -0.121632 0.000000 -18.2016 -0.121632 1.40108 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.39849 -0.148452 0.000000 -18.2016 -0.148452 1.39849 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.39509 -0.177639 0.000000 -18.2016 -0.177639 1.39509 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.39072 -0.209097 0.000000 -18.2016 -0.209097 1.39072 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.38525 -0.242719 0.000000 -18.2016 -0.242719 1.38525 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.37852 -0.278393 0.000000 -18.2016 -0.278393 1.37852 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.37039 -0.315997 0.000000 -18.2016 -0.315997 1.37039 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.3607 -0.355398 0.000000 -18.2016 -0.355398 1.3607 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.34931 -0.396456 0.000000 -18.2016 -0.396456 1.34931 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.33607 -0.439018 0.000000 -18.2016 -0.439018 1.33607 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.32084 -0.482922 0.000000 -18.2016 -0.482922 1.32084 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.30347 -0.527995 0.000000 -18.2016 -0.527995 1.30347 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.28385 -0.574056 0.000000 -18.2016 -0.574056 1.28385 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.26186 -0.620909 0.000000 -18.2016 -0.620909 1.26186 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.23739 -0.668353 0.000000 -18.2016 -0.668353 1.23739 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.21034 -0.716176 0.000000 -18.2016 -0.716176 1.21034 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.18063 -0.764158 0.000000 -18.2016 -0.764158 1.18063 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.1482 -0.812071 0.000000 -18.2016 -0.812071 1.1482 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.113 -0.859682 0.000000 -18.2016 -0.859682 1.113 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.075 -0.906753 0.000000 -18.2016 -0.906753 1.075 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -1.03418 -0.953043 0.000000 -18.2016 -0.953043 1.03418 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.990555 -0.998309 0.000000 -18.2016 -0.998309 0.990555 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.944148 -1.04231 0.000000 -18.2016 -1.04231 0.944148 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.895006 -1.0848 0.000000 -18.2016 -1.0848 0.895006 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.843196 -1.12554 0.000000 -18.2016 -1.12554 0.843196 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.788807 -1.1643 0.000000 -18.2016 -1.1643 0.788807 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.731946 -1.20086 0.000000 -18.2016 -1.20086 0.731946 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.672741 -1.23501 0.000000 -18.2016 -1.23501 0.672741 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.611338 -1.26653 0.000000 -18.2016 -1.26653 0.611338 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.547905 -1.29523 0.000000 -18.2016 -1.29523 0.547905 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.482621 -1.32095 0.000000 -18.2016 -1.32095 0.482621 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.415686 -1.34351 0.000000 -18.2016 -1.34351 0.415686 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.34731 -1.36279 0.000000 -18.2016 -1.36279 0.34731 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.27772 -1.37866 0.000000 -18.2016 -1.37866 0.27772 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.207149 -1.39101 0.000000 -18.2016 -1.39101 0.207149 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.135841 -1.39977 0.000000 -18.2016 -1.39977 0.135841 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 -0.064047 -1.40489 0.000000 -18.2016 -1.40489 0.064047 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.007977 -1.40633 0.000000 -18.2016 -1.40633 -0.007977 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.079978 -1.40407 0.000000 -18.2016 -1.40407 -0.079978 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.151698 -1.39814 0.000000 -18.2016 -1.39814 -0.151698 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.222882 -1.38858 0.000000 -18.2016 -1.38858 -0.222882 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.293282 -1.37543 0.000000 -18.2016 -1.37543 -0.293282 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.362654 -1.35879 0.000000 -18.2016 -1.35879 -0.362654 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.430767 -1.33875 0.000000 -18.2016 -1.33875 -0.430767 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.497396 -1.31545 0.000000 -18.2016 -1.31545 -0.497396 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.562333 -1.28903 0.000000 -18.2016 -1.28903 -0.562333 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.625383 -1.25965 0.000000 -18.2016 -1.25965 -0.625383 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.686365 -1.22749 0.000000 -18.2016 -1.22749 -0.686365 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.745119 -1.19274 0.000000 -18.2016 -1.19274 -0.745119 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.8015 -1.1556 0.000000 -18.2016 -1.1556 -0.8015 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.855383 -1.11631 0.000000 -18.2016 -1.11631 -0.855383 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.906666 -1.07507 0.000000 -18.2016 -1.07507 -0.906666 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 0.955262 -1.03213 0.000000 -18.2016 -1.03213 -0.955262 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.00111 -0.987724 0.000000 -18.2016 -0.987724 -1.00111 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.04416 -0.942094 0.000000 -18.2016 -0.942094 -1.04416 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.0844 -0.895483 0.000000 -18.2016 -0.895483 -1.0844 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.12182 -0.848134 0.000000 -18.2016 -0.848134 -1.12182 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.15644 -0.800287 0.000000 -18.2016 -0.800287 -1.15644 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.18829 -0.752182 0.000000 -18.2016 -0.752182 -1.18829 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.21743 -0.704049 0.000000 -18.2016 -0.704049 -1.21743 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.24392 -0.656115 0.000000 -18.2016 -0.656115 -1.24392 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.26784 -0.608598 0.000000 -18.2016 -0.608598 -1.26784 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.2893 -0.56171 0.000000 -18.2016 -0.56171 -1.2893 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.30841 -0.515651 0.000000 -18.2016 -0.515651 -1.30841 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.32527 -0.470612 0.000000 -18.2016 -0.470612 -1.32527 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.34003 -0.426774 0.000000 -18.2016 -0.426774 -1.34003 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.35282 -0.384309 0.000000 -18.2016 -0.384309 -1.35282 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.36379 -0.343376 0.000000 -18.2016 -0.343376 -1.36379 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.37307 -0.304125 0.000000 -18.2016 -0.304125 -1.37307 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.38083 -0.266696 0.000000 -18.2016 -0.266696 -1.38083 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.38721 -0.231219 0.000000 -18.2016 -0.231219 -1.38721 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.39237 -0.197813 0.000000 -18.2016 -0.197813 -1.39237 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.39645 -0.166592 0.000000 -18.2016 -0.166592 -1.39645 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.3996 -0.137656 0.000000 -18.2016 -0.137656 -1.3996 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40195 -0.111104 0.000000 -18.2016 -0.111104 -1.40195 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40365 -0.087025 0.000000 -18.2016 -0.087025 -1.40365 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40482 -0.065503 0.000000 -18.2016 -0.065503 -1.40482 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40558 -0.046618 0.000000 -18.2016 -0.046618 -1.40558 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40602 -0.030445 0.000000 -18.2016 -0.030445 -1.40602 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40625 -0.017057 0.000000 -18.2016 -0.017057 -1.40625 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40633 -0.006525 0.000000 -18.2016 -0.006525 -1.40633 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40635 0.001081 0.000000 -18.2016 0.001081 -1.40635 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40634 0.005696 0.000000 -18.2016 0.005696 -1.40634 0 7.28847 0 0 0 1 -0.000000 0 -1.40635 3.66148 1.40633 0.007249 0.000000 -18.2016 0.007249 -1.40633 0 7.28847 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#Bone01-node-transform_Bone01-node_transform-output-array" count="101" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="Bone01-node-transform_Bone01-node_transform-interpolations">
+        <Name_array id="Bone01-node-transform_Bone01-node_transform-interpolations-array" count="101">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#Bone01-node-transform_Bone01-node_transform-interpolations-array" count="101" stride="1">
+            <param name="INTERPOLATION" type="Name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="Bone01-node-transform_Bone01-node_transform-sampler">
+        <input semantic="INPUT" source="#Bone01-node-transform_Bone01-node_transform-input"/>
+        <input semantic="OUTPUT" source="#Bone01-node-transform_Bone01-node_transform-output"/>
+        <input semantic="INTERPOLATION" source="#Bone01-node-transform_Bone01-node_transform-interpolations"/>
+      </sampler>
+      <channel source="#Bone01-node-transform_Bone01-node_transform-sampler" target="Bone01-node/transform"/>
+    </animation>
+  </library_animations>
+  <library_animation_clips>
+    <animation_clip id="AnimationClip" start="0" end="3.33333">
+      <instance_animation url="#Bone01-node-transform"/>
+    </animation_clip>
+  </library_animation_clips>
+  <library_materials>
+    <material id="ColorMaterial_58C7E100" name="ColorMaterial_58C7E100">
+      <instance_effect url="#ColorMaterial_58C7E100-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="ColorMaterial_58C7E100-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.345098 0.780392 0.882353 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.345098 0.780392 0.882353 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0.2</float>
+              </spec_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box01-mesh" name="Box01">
+      <mesh>
+        <source id="Box01-mesh-positions">
+          <float_array id="Box01-mesh-positions-array" count="24">-49.3333 -6.66667 0 49.3333 -6.66667 0 -49.3333 6.66667 0 49.3333 6.66667 0 -49.3333 -6.66667 -8 49.3333 -6.66667 -8 -49.3333 6.66667 -8 49.3333 6.66667 -8</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-normals">
+          <float_array id="Box01-mesh-normals-array" count="72">0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-map-channel1">
+          <float_array id="Box01-mesh-map-channel1-array" count="36">0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-map-channel1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-map-channel1-tangents">
+          <float_array id="Box01-mesh-map-channel1-tangents-array" count="12">-1 0 0 1 0 0 0 -1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-map-channel1-tangents-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-map-channel1-binormals">
+          <float_array id="Box01-mesh-map-channel1-binormals-array" count="6">0 -1 0 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-map-channel1-binormals-array" count="2" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box01-mesh-vertices">
+          <input semantic="POSITION" source="#Box01-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_58C7E100" count="12">
+          <input semantic="VERTEX" source="#Box01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Box01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Box01-mesh-map-channel1" offset="2" set="1"/>
+          <input semantic="TEXTANGENT" source="#Box01-mesh-map-channel1-tangents" offset="3" set="1"/>
+          <input semantic="TEXBINORMAL" source="#Box01-mesh-map-channel1-binormals" offset="4" set="1"/>
+          <p>2 0 10 0 0 0 1 8 0 0 3 2 11 0 0 1 3 9 0 0 3 2 11 0 0 0 1 8 0 0 5 4 8 1 0 4 5 9 1 0 7 6 10 1 0 6 7 11 1 0 7 6 10 1 0 4 5 9 1 0 1 8 5 0 1 0 9 4 0 1 5 10 7 0 1 4 11 6 0 1 5 10 7 0 1 0 9 4 0 1 3 12 1 2 1 1 13 0 2 1 7 14 3 2 1 5 15 2 2 1 7 14 3 2 1 1 13 0 2 1 2 16 5 1 1 3 17 4 1 1 6 18 7 1 1 7 19 6 1 1 6 18 7 1 1 3 17 4 1 1 0 20 1 3 1 2 21 0 3 1 4 22 3 3 1 6 23 2 3 1 4 22 3 3 1 2 21 0 3 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Box01-mesh-skin">
+      <skin source="#Box01-mesh">
+        <bind_shape_matrix>-0.000000 0 -1 -0.000002 -1 0 0.000000 -50.6667 0 1 0 7.55555 0 0 0 1</bind_shape_matrix>
+        <source id="Box01-mesh-skin-joints">
+          <Name_array id="Box01-mesh-skin-joints-array" count="1">Bone1</Name_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-skin-joints-array" count="1" stride="1">
+              <param name="JOINT" type="Name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-skin-bind_poses">
+          <float_array id="Box01-mesh-skin-bind_poses-array" count="16">-0.000000 -0.711056 0.002539 -12.9608 0 0.002539 0.711056 -5.13629 -0.711061 0.000000 0 2.60354 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-skin-bind_poses-array" count="1" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-mesh-skin-weights">
+          <float_array id="Box01-mesh-skin-weights-array" count="1">1</float_array>
+          <technique_common>
+            <accessor source="#Box01-mesh-skin-weights-array" count="1" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Box01-mesh-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Box01-mesh-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="8">
+          <input semantic="JOINT" source="#Box01-mesh-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#Box01-mesh-skin-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 </vcount>
+          <v>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="unnamed_scene" name="unnamed_scene">
+      <node id="Box01-node" name="Box01" type="NODE">
+        <instance_controller url="#Box01-mesh-skin">
+          <skeleton>#Bone01-node</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial_58C7E100" target="#ColorMaterial_58C7E100"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Bone01-node" name="Bone01" sid="Bone1" type="JOINT">
+        <matrix sid="transform">-0.000000 0 -1.40635 3.66148 -1.40573 0.041835 0.000000 -18.2016 0.041835 1.40573 0 7.28847 0 0 0 1</matrix>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#unnamed_scene"/>
+  </scene>
+</COLLADA>

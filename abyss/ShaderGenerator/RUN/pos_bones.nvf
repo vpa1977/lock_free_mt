@@ -1,0 +1,114 @@
+
+#include "constants.h"
+
+vs.1.1
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_0
+
+mov r_position_skinned, VERTEX_POSITION
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_1
+
+mov a0.x, VERTEX_BONEINDICES.x
+dp4 r_position_skinned.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_position_skinned.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_position_skinned.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_position_skinned.w, CONST_ONE_ZERO.x
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_2
+
+mov a0.x, VERTEX_BONEINDICES.x
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.xxxx
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+mov a0.x, VERTEX_BONEINDICES.y
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, r_final_weight.xxxx, r_position_skinned
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_3
+
+mov a0.x, VERTEX_BONEINDICES.x
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.xxxx
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+mov a0.x, VERTEX_BONEINDICES.y
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.yyyy, r_position_skinned
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.y
+
+mov a0.x, VERTEX_BONEINDICES.z
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, r_final_weight.xxxx, r_position_skinned
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_4
+
+mov a0.x, VERTEX_BONEINDICES.x
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.xxxx
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+mov a0.x, VERTEX_BONEINDICES.y
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.yyyy, r_position_skinned
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.y
+
+mov a0.x, VERTEX_BONEINDICES.z
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, VERTEX_BONEWEIGHTS.zzzz, r_position_skinned
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.z
+
+mov a0.x, VERTEX_BONEINDICES.w
+dp4 r_bonepos.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bonepos.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bonepos.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bonepos.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bonepos, r_final_weight.xxxx, r_position_skinned
+
+#endfragment
+
+
+

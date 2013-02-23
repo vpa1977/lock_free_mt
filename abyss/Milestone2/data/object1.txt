@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=tex.jpg
+radius=6	
+velocity=0.01
+selfSpeed=0.05
+angle=-0.78
+size=1
+satellite=khumaak.txt
+satellite=khumaak1.txt
+
+
+

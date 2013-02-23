@@ -1,0 +1,8 @@
+
+#include "constants.h"
+
+vs.1.0
+
+#beginfragment f_lighting_disabled
+mov oD0, CONST_ONE_ZERO.xxxx
+#endfragment

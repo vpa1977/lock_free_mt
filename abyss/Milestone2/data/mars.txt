@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=mars.jpg
+radius=13
+selfSpeed=0.1
+velocity=0.021
+size=1
+point=1.6
+
+
+
+
+

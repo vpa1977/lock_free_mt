@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+    </contributor>
+    <created>2008-04-20T17:15:52Z</created>
+    <modified>2008-04-20T17:15:52Z</modified>
+    <unit meter="0,025400"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="Map__2-image" name="Map__2">
+      <init_from>file://C:\check\kritik\abyss\Milestone4\Col_Z.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_01___Default" name="_01___Default">
+      <instance_effect url="#_01___Default-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_01___Default-fx" name="_01___Default">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0,000000  0,000000 0,000000 1,000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0,588235  0,588235 0,588235 1,000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Map__2-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0,000000  0,000000 0,000000 1,000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2,000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0,000000  0,000000 0,000000 1,000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">0,000000</float>
+            </reflectivity>
+            <transparent>
+              <color sid="transparent">1,000000  1,000000 1,000000 1,000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0,000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Box01-lib" name="Box01Mesh">
+      <mesh>
+        <source id="Box01-lib-Position">
+          <float_array id="Box01-lib-Position-array" count="108">
+-49,333302 -6,666670 0,000000
+49,333302 -6,666670 0,000000
+-49,333302 6,666670 0,000000
+49,333302 6,666670 0,000000
+-49,333302 -6,666670 -8,000000
+49,333302 -6,666670 -8,000000
+-49,333302 6,666670 -8,000000
+49,333302 6,666670 -8,000000
+49,333302 6,666670 0,000000
+-49,333302 -6,666670 0,000000
+49,333302 6,666670 -8,000000
+-49,333302 -6,666670 -8,000000
+49,333302 -6,666670 0,000000
+-49,333302 -6,666670 0,000000
+49,333302 -6,666670 -8,000000
+-49,333302 -6,666670 -8,000000
+49,333302 -6,666670 -8,000000
+-49,333302 -6,666670 0,000000
+49,333302 6,666670 0,000000
+49,333302 -6,666670 0,000000
+49,333302 6,666670 -8,000000
+49,333302 -6,666670 -8,000000
+49,333302 6,666670 -8,000000
+49,333302 -6,666670 0,000000
+-49,333302 6,666670 0,000000
+49,333302 6,666670 0,000000
+-49,333302 6,666670 -8,000000
+49,333302 6,666670 -8,000000
+-49,333302 6,666670 -8,000000
+49,333302 6,666670 0,000000
+-49,333302 -6,666670 0,000000
+-49,333302 6,666670 0,000000
+-49,333302 -6,666670 -8,000000
+-49,333302 6,666670 -8,000000
+-49,333302 -6,666670 -8,000000
+-49,333302 6,666670 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-lib-Position-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01-lib-Normal0">
+          <float_array id="Box01-lib-Normal0-array" count="108">
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 1,000000
+0,000000 0,000000 -1,000000
+0,000000 0,000000 -1,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+0,000000 -1,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+1,000000 0,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+0,000000 1,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+-1,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01-lib-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Box01-lib-Vertex">
+          <input semantic="POSITION" source="#Box01-lib-Position"/>
+        </vertices>
+        <polygons material="_01___Default" count="12">
+          <input semantic="VERTEX" offset="0" source="#Box01-lib-Vertex"/>
+          <input semantic="NORMAL" offset="1" source="#Box01-lib-Normal0"/>
+          <p>2 2 0 0 3 3</p>
+          <p>1 1 8 8 9 9</p>
+          <p>5 5 4 4 7 7</p>
+          <p>6 6 10 10 11 11</p>
+          <p>12 12 13 13 14 14</p>
+          <p>15 15 16 16 17 17</p>
+          <p>18 18 19 19 20 20</p>
+          <p>21 21 22 22 23 23</p>
+          <p>24 24 25 25 26 26</p>
+          <p>27 27 28 28 29 29</p>
+          <p>30 30 31 31 32 32</p>
+          <p>33 33 34 34 35 35</p>
+        </polygons>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="Box01Controller">
+      <skin source="#Box01-lib">
+        <bind_shape_matrix>0,000000 0,000000 -1,000000 -0,000002 -1,000000 0,000000 -0,000000 -50,666698 0,000000 1,000000 0,000000 7,555550 0,000000 0,000000 0,000000 1,000000
+</bind_shape_matrix>
+        <source id="Box01Controller-Joints">
+          <Name_array id="Box01Controller-Joints-array" count="1">
+ Bone01
+</Name_array>
+          <technique_common>
+            <accessor source="#Box01Controller-Joints-array" count="1">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01Controller-Matrices">
+          <float_array id="Box01Controller-Matrices-array" count="16">
+0,000000 -0,711056 0,002539 -12,960801 0,000000 0,002539 0,711056 -5,136290 -0,711061 -0,000000 0,000000 2,603540 0,000000 0,000000 0,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01Controller-Matrices-array" count="1" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Box01Controller-Weights">
+          <float_array id="Box01Controller-Weights-array" count="37">
+1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000
+1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000 1,000000
+1,000000 1,000000 1,000000 1,000000 1,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Box01Controller-Weights-array" count="37">
+              <param type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#Box01Controller-Joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#Box01Controller-Matrices"/>
+        </joints>
+        <vertex_weights count="36">
+          <input semantic="JOINT" offset="0" source="#Box01Controller-Joints"/>
+          <input semantic="WEIGHT" offset="1" source="#Box01Controller-Weights"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</vcount>
+          <v>0 1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0 21 0 22 0 23 0 24 0 25 0 26 0 27 0 28 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0 36</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_animations>
+    <animation id="Bone01-anim" name="Bone01">
+      <animation>
+        <source id="Bone01-translate-animation-inputX">
+          <float_array id="Bone01-translate-animation-inputX-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-inputX-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outputX">
+          <float_array id="Bone01-translate-animation-outputX-array" count="101">
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480 3,661480
+3,661480 3,661480 3,661480 3,661480 3,661480
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outputX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-intanX">
+          <float_array id="Bone01-translate-animation-intanX-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-intanX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outtanX">
+          <float_array id="Bone01-translate-animation-outtanX-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outtanX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-interpolationX">
+          <Name_array id="Bone01-translate-animation-interpolationX-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-interpolationX-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-translate-animationX">
+          <input semantic="INPUT" source="#Bone01-translate-animation-inputX"/>
+          <input semantic="OUTPUT" source="#Bone01-translate-animation-outputX"/>
+          <input semantic="IN_TANGENT" source="#Bone01-translate-animation-intanX"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-translate-animation-outtanX"/>
+          <input semantic="INTERPOLATION" source="#Bone01-translate-animation-interpolationX"/>
+        </sampler>
+        <channel source="#Bone01-translate-animationX" target="Bone01/translate.X"/>
+      </animation>
+      <animation>
+        <source id="Bone01-translate-animation-inputY">
+          <float_array id="Bone01-translate-animation-inputY-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-inputY-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outputY">
+          <float_array id="Bone01-translate-animation-outputY-array" count="101">
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+-18,201599 -18,201599 -18,201599 -18,201599 -18,201599
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outputY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-intanY">
+          <float_array id="Bone01-translate-animation-intanY-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-intanY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outtanY">
+          <float_array id="Bone01-translate-animation-outtanY-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outtanY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-interpolationY">
+          <Name_array id="Bone01-translate-animation-interpolationY-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-interpolationY-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-translate-animationY">
+          <input semantic="INPUT" source="#Bone01-translate-animation-inputY"/>
+          <input semantic="OUTPUT" source="#Bone01-translate-animation-outputY"/>
+          <input semantic="IN_TANGENT" source="#Bone01-translate-animation-intanY"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-translate-animation-outtanY"/>
+          <input semantic="INTERPOLATION" source="#Bone01-translate-animation-interpolationY"/>
+        </sampler>
+        <channel source="#Bone01-translate-animationY" target="Bone01/translate.Y"/>
+      </animation>
+      <animation>
+        <source id="Bone01-translate-animation-inputZ">
+          <float_array id="Bone01-translate-animation-inputZ-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-inputZ-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outputZ">
+          <float_array id="Bone01-translate-animation-outputZ-array" count="101">
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470 7,288470
+7,288470 7,288470 7,288470 7,288470 7,288470
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outputZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-intanZ">
+          <float_array id="Bone01-translate-animation-intanZ-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-intanZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-outtanZ">
+          <float_array id="Bone01-translate-animation-outtanZ-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-outtanZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-translate-animation-interpolationZ">
+          <Name_array id="Bone01-translate-animation-interpolationZ-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-translate-animation-interpolationZ-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-translate-animationZ">
+          <input semantic="INPUT" source="#Bone01-translate-animation-inputZ"/>
+          <input semantic="OUTPUT" source="#Bone01-translate-animation-outputZ"/>
+          <input semantic="IN_TANGENT" source="#Bone01-translate-animation-intanZ"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-translate-animation-outtanZ"/>
+          <input semantic="INTERPOLATION" source="#Bone01-translate-animation-interpolationZ"/>
+        </sampler>
+        <channel source="#Bone01-translate-animationZ" target="Bone01/translate.Z"/>
+      </animation>
+      <animation>
+        <source id="Bone01-rotateX-animation-inputANGLE">
+          <float_array id="Bone01-rotateX-animation-inputANGLE-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateX-animation-inputANGLE-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateX-animation-outputANGLE">
+          <float_array id="Bone01-rotateX-animation-outputANGLE-array" count="101">
+90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000
+90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000008 90,000000 90,000000 90,000000
+90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000
+90,000000 89,999992 90,000000 90,000000 89,999962 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000023 90,000000 90,000000 90,000000 90,000000
+90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000
+90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000 90,000000
+90,000000 90,000000 90,000000 90,000000 90,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateX-animation-outputANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateX-animation-intanANGLE">
+          <float_array id="Bone01-rotateX-animation-intanANGLE-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateX-animation-intanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateX-animation-outtanANGLE">
+          <float_array id="Bone01-rotateX-animation-outtanANGLE-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateX-animation-outtanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateX-animation-interpolationANGLE">
+          <Name_array id="Bone01-rotateX-animation-interpolationANGLE-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateX-animation-interpolationANGLE-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-rotateX-animationANGLE">
+          <input semantic="INPUT" source="#Bone01-rotateX-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Bone01-rotateX-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Bone01-rotateX-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-rotateX-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Bone01-rotateX-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Bone01-rotateX-animationANGLE" target="Bone01/rotateX.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Bone01-rotateY-animation-inputANGLE">
+          <float_array id="Bone01-rotateY-animation-inputANGLE-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateY-animation-inputANGLE-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateY-animation-outputANGLE">
+          <float_array id="Bone01-rotateY-animation-outputANGLE-array" count="101">
+-1,704651 -1,672358 -1,580970 -1,438684 -1,253613 -1,034063 -0,788095 -0,524012 -0,249958 0,025873 0,295335 0,619232 1,061964 1,620760 2,292936 3,075622
+3,966106 4,961578 6,059353 7,256518 8,550468 9,938295 11,417359 12,984819 14,637936 16,373913 18,189962 20,083290 22,051334 24,091152 26,199886 28,374866
+30,613428 32,912807 35,270077 37,682522 40,147335 42,661949 45,223381 47,829006 50,475925 53,161362 55,882568 58,636936 61,421761 64,233978 67,070786 69,929771
+72,807777 75,702400 78,610649 81,529770 84,457077 87,389771 90,324997 93,260139 96,192368 99,118813 102,036880 104,943626 107,836525 110,712540 113,569008 116,403198
+119,212234 121,993515 124,744377 127,461479 130,142792 132,785034 135,385635 137,941635 140,450577 142,909485 145,315750 147,666397 149,958878 152,190262 154,357727 156,458679
+158,490356 160,449722 162,334320 164,141220 165,867783 167,511032 169,068405 170,536987 171,914139 173,196960 174,382813 175,468811 176,452271 177,330383 178,100403 178,759567
+179,305069 179,734177 180,044037 180,232056 180,295334
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateY-animation-outputANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateY-animation-intanANGLE">
+          <float_array id="Bone01-rotateY-animation-intanANGLE-array" count="101">
+0,000000 0,020543 0,038813 0,054884 0,066995 0,077805 0,085249 0,089102 0,091905 0,091140 0,098246 0,128131 0,167394 0,203819 0,243159 0,279652
+0,312268 0,349856 0,383574 0,412467 0,449621 0,476174 0,506020 0,538273 0,566450 0,588128 0,621907 0,641352 0,665696 0,693371 0,715976 0,730773
+0,758452 0,778307 0,789747 0,815164 0,832256 0,840468 0,866298 0,872418 0,885692 0,906467 0,909462 0,920046 0,935466 0,944172 0,943082 0,958856
+0,964831 0,960813 0,973961 0,977166 0,970272 0,983803 0,975035 0,974556 0,982253 0,970740 0,967487 0,969328 0,964210 0,949158 0,954085 0,937309
+0,928539 0,924618 0,913910 0,893845 0,892537 0,870806 0,856497 0,846532 0,830322 0,805552 0,795050 0,776049 0,749041 0,737502 0,708960 0,686421
+0,667046 0,642476 0,611221 0,592413 0,559706 0,531614 0,505745 0,475635 0,440426 0,412604 0,379714 0,342650 0,312109 0,273746 0,237383 0,201343
+0,162896 0,122353 0,083474 0,041739 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateY-animation-intanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateY-animation-outtanANGLE">
+          <float_array id="Bone01-rotateY-animation-outtanANGLE-array" count="101">
+0,000000 0,020672 0,039055 0,054202 0,067838 0,077321 0,084717 0,090223 0,091335 0,090570 0,099481 0,127335 0,166348 0,206382 0,241649 0,277904
+0,316196 0,347683 0,381177 0,417656 0,444036 0,479169 0,509183 0,534930 0,562909 0,595526 0,614181 0,645386 0,669857 0,689065 0,711501 0,739965
+0,753741 0,773443 0,799681 0,810101 0,827055 0,851040 0,855537 0,877905 0,891227 0,895207 0,915182 0,925797 0,929656 0,938271 0,954945 0,952900
+0,958801 0,972898 0,967912 0,971059 0,982476 0,971582 0,981168 0,980647 0,970051 0,976846 0,973534 0,963307 0,958184 0,961097 0,942233 0,943204
+0,934342 0,918875 0,908198 0,905088 0,881450 0,876283 0,861850 0,841274 0,825133 0,815685 0,790112 0,771199 0,758463 0,728340 0,713419 0,690711
+0,662903 0,638460 0,618909 0,585054 0,563227 0,534937 0,502603 0,472662 0,445966 0,410041 0,377340 0,346960 0,308232 0,275468 0,238866 0,200092
+0,161878 0,123892 0,082437 0,042001 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateY-animation-outtanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateY-animation-interpolationANGLE">
+          <Name_array id="Bone01-rotateY-animation-interpolationANGLE-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateY-animation-interpolationANGLE-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-rotateY-animationANGLE">
+          <input semantic="INPUT" source="#Bone01-rotateY-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Bone01-rotateY-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Bone01-rotateY-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-rotateY-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Bone01-rotateY-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Bone01-rotateY-animationANGLE" target="Bone01/rotateY.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Bone01-rotateZ-animation-inputANGLE">
+          <float_array id="Bone01-rotateZ-animation-inputANGLE-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateZ-animation-inputANGLE-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateZ-animation-outputANGLE">
+          <float_array id="Bone01-rotateZ-animation-outputANGLE-array" count="101">
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -89,999985 -90,000008 -90,000008 -89,999954 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+-90,000008 -90,000008 -90,000008 -90,000008 -90,000008
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateZ-animation-outputANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateZ-animation-intanANGLE">
+          <float_array id="Bone01-rotateZ-animation-intanANGLE-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateZ-animation-intanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateZ-animation-outtanANGLE">
+          <float_array id="Bone01-rotateZ-animation-outtanANGLE-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateZ-animation-outtanANGLE-array" count="101">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-rotateZ-animation-interpolationANGLE">
+          <Name_array id="Bone01-rotateZ-animation-interpolationANGLE-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-rotateZ-animation-interpolationANGLE-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-rotateZ-animationANGLE">
+          <input semantic="INPUT" source="#Bone01-rotateZ-animation-inputANGLE"/>
+          <input semantic="OUTPUT" source="#Bone01-rotateZ-animation-outputANGLE"/>
+          <input semantic="IN_TANGENT" source="#Bone01-rotateZ-animation-intanANGLE"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-rotateZ-animation-outtanANGLE"/>
+          <input semantic="INTERPOLATION" source="#Bone01-rotateZ-animation-interpolationANGLE"/>
+        </sampler>
+        <channel source="#Bone01-rotateZ-animationANGLE" target="Bone01/rotateZ.ANGLE"/>
+      </animation>
+      <animation>
+        <source id="Bone01-scale-animation-inputX">
+          <float_array id="Bone01-scale-animation-inputX-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-inputX-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outputX">
+          <float_array id="Bone01-scale-animation-outputX-array" count="101">
+1,406352 1,406349 1,406345 1,406353 1,406347 1,406349 1,406353 1,406349 1,406353 1,406350 1,406349 1,406352 1,406352 1,406353 1,406346 1,406346
+1,406348 1,406350 1,406347 1,406354 1,406351 1,406353 1,406350 1,406351 1,406347 1,406348 1,406350 1,406354 1,406347 1,406347 1,406349 1,406353
+1,406354 1,406351 1,406351 1,406351 1,406352 1,406350 1,406350 1,406352 1,406352 1,406350 1,406347 1,406346 1,406354 1,406354 1,406350 1,406354
+1,406348 1,406350 1,406354 1,406350 1,406346 1,406349 1,406353 1,406346 1,406345 1,406354 1,406351 1,406353 1,406347 1,406347 1,406349 1,406351
+1,406353 1,406354 1,406348 1,406353 1,406349 1,406349 1,406350 1,406347 1,406348 1,406347 1,406347 1,406347 1,406350 1,406351 1,406346 1,406347
+1,406354 1,406349 1,406349 1,406348 1,406354 1,406348 1,406349 1,406348 1,406351 1,406352 1,406353 1,406345 1,406345 1,406346 1,406353 1,406350
+1,406353 1,406345 1,406350 1,406352 1,406349
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outputX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-intanX">
+          <float_array id="Bone01-scale-animation-intanX-array" count="101">
+0,000000 -0,000001 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000000 -0,000001 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000
+0,000001 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000
+0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 -0,000001 -0,000000 0,000000 0,000001 0,000000 0,000000 0,000000
+0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000001
+0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000001
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000000 0,000000
+0,000000 0,000000 0,000001 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-intanX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outtanX">
+          <float_array id="Bone01-scale-animation-outtanX-array" count="101">
+0,000000 -0,000001 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000000 -0,000001 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000
+0,000001 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000
+0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 -0,000001 -0,000000 0,000000 0,000001 0,000000 0,000000 0,000000
+0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000001
+0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000001
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000000 0,000000
+0,000000 0,000000 0,000001 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outtanX-array" count="101">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-interpolationX">
+          <Name_array id="Bone01-scale-animation-interpolationX-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-interpolationX-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-scale-animationX">
+          <input semantic="INPUT" source="#Bone01-scale-animation-inputX"/>
+          <input semantic="OUTPUT" source="#Bone01-scale-animation-outputX"/>
+          <input semantic="IN_TANGENT" source="#Bone01-scale-animation-intanX"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-scale-animation-outtanX"/>
+          <input semantic="INTERPOLATION" source="#Bone01-scale-animation-interpolationX"/>
+        </sampler>
+        <channel source="#Bone01-scale-animationX" target="Bone01/scale.X"/>
+      </animation>
+      <animation>
+        <source id="Bone01-scale-animation-inputY">
+          <float_array id="Bone01-scale-animation-inputY-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-inputY-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outputY">
+          <float_array id="Bone01-scale-animation-outputY-array" count="101">
+1,406352 1,406349 1,406345 1,406353 1,406347 1,406349 1,406353 1,406349 1,406353 1,406350 1,406349 1,406352 1,406352 1,406353 1,406346 1,406346
+1,406348 1,406350 1,406347 1,406354 1,406351 1,406353 1,406350 1,406351 1,406347 1,406348 1,406350 1,406354 1,406347 1,406347 1,406349 1,406353
+1,406354 1,406351 1,406351 1,406351 1,406352 1,406350 1,406350 1,406352 1,406352 1,406350 1,406347 1,406346 1,406354 1,406354 1,406350 1,406354
+1,406348 1,406350 1,406354 1,406350 1,406346 1,406349 1,406353 1,406346 1,406345 1,406354 1,406351 1,406353 1,406347 1,406347 1,406349 1,406351
+1,406353 1,406354 1,406348 1,406353 1,406349 1,406349 1,406350 1,406347 1,406348 1,406347 1,406347 1,406347 1,406350 1,406351 1,406346 1,406347
+1,406354 1,406349 1,406349 1,406348 1,406354 1,406348 1,406349 1,406348 1,406351 1,406352 1,406353 1,406345 1,406345 1,406346 1,406353 1,406350
+1,406353 1,406345 1,406350 1,406352 1,406349
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outputY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-intanY">
+          <float_array id="Bone01-scale-animation-intanY-array" count="101">
+0,000000 -0,000001 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000000 -0,000001 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000
+0,000001 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000
+0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 -0,000001 -0,000000 0,000000 0,000001 0,000000 0,000000 0,000000
+0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000001
+0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000001
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000000 0,000000
+0,000000 0,000000 0,000001 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-intanY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outtanY">
+          <float_array id="Bone01-scale-animation-outtanY-array" count="101">
+0,000000 -0,000001 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000000 -0,000001 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000
+0,000001 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000
+0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 -0,000001 -0,000000 0,000000 0,000001 0,000000 0,000000 0,000000
+0,000000 0,000001 0,000000 -0,000001 0,000000 0,000001 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000001
+0,000000 0,000000 0,000000 0,000000 -0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 0,000001
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000001 0,000000 0,000000 -0,000000 0,000000 0,000001 0,000000 0,000000
+0,000000 0,000000 0,000001 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outtanY-array" count="101">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-interpolationY">
+          <Name_array id="Bone01-scale-animation-interpolationY-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-interpolationY-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-scale-animationY">
+          <input semantic="INPUT" source="#Bone01-scale-animation-inputY"/>
+          <input semantic="OUTPUT" source="#Bone01-scale-animation-outputY"/>
+          <input semantic="IN_TANGENT" source="#Bone01-scale-animation-intanY"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-scale-animation-outtanY"/>
+          <input semantic="INTERPOLATION" source="#Bone01-scale-animation-interpolationY"/>
+        </sampler>
+        <channel source="#Bone01-scale-animationY" target="Bone01/scale.Y"/>
+      </animation>
+      <animation>
+        <source id="Bone01-scale-animation-inputZ">
+          <float_array id="Bone01-scale-animation-inputZ-array" count="101">
+0,000000 0,033125 0,066458 0,100000 0,133125 0,166667 0,200000 0,233125 0,266667 0,300000 0,333125 0,366667 0,400000 0,433125 0,466667 0,500000
+0,533125 0,566667 0,600000 0,633125 0,666667 0,699792 0,733125 0,766667 0,800000 0,833125 0,866667 0,899792 0,933125 0,966667 1,000000 1,033125
+1,066667 1,100000 1,133125 1,166667 1,200000 1,233125 1,266667 1,299792 1,333125 1,366667 1,399792 1,433125 1,466667 1,500000 1,533125 1,566667
+1,600000 1,633125 1,666667 1,700000 1,733125 1,766667 1,799792 1,833125 1,866667 1,899792 1,933125 1,966667 2,000000 2,033125 2,066667 2,099792
+2,133125 2,166667 2,200000 2,233125 2,266667 2,299792 2,333125 2,366667 2,400000 2,433125 2,466667 2,500000 2,533125 2,566667 2,599792 2,633125
+2,666667 2,700000 2,733125 2,766667 2,799792 2,833125 2,866667 2,900000 2,933125 2,966667 3,000000 3,033125 3,066667 3,099792 3,133125 3,166667
+3,200000 3,233125 3,266667 3,299792 3,333125
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-inputZ-array" count="101">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outputZ">
+          <float_array id="Bone01-scale-animation-outputZ-array" count="101">
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350 1,406350
+1,406350 1,406350 1,406350 1,406350 1,406350
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outputZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-intanZ">
+          <float_array id="Bone01-scale-animation-intanZ-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 -0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-intanZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-outtanZ">
+          <float_array id="Bone01-scale-animation-outtanZ-array" count="101">
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000 0,000000
+0,000000 0,000000 0,000000 0,000000 0,000000
+</float_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-outtanZ-array" count="101">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Bone01-scale-animation-interpolationZ">
+          <Name_array id="Bone01-scale-animation-interpolationZ-array" count="101">
+ BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+BEZIER BEZIER BEZIER BEZIER BEZIER BEZIER
+</Name_array>
+          <technique_common>
+            <accessor source="#Bone01-scale-animation-interpolationZ-array" count="101">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Bone01-scale-animationZ">
+          <input semantic="INPUT" source="#Bone01-scale-animation-inputZ"/>
+          <input semantic="OUTPUT" source="#Bone01-scale-animation-outputZ"/>
+          <input semantic="IN_TANGENT" source="#Bone01-scale-animation-intanZ"/>
+          <input semantic="OUT_TANGENT" source="#Bone01-scale-animation-outtanZ"/>
+          <input semantic="INTERPOLATION" source="#Bone01-scale-animation-interpolationZ"/>
+        </sampler>
+        <channel source="#Bone01-scale-animationZ" target="Bone01/scale.Z"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="RootNode" name="RootNode">
+      <node id="Box01" name="Box01">
+        <instance_controller url="#Box01Controller">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Map__2-Material" target="#Map__2-Material"/>
+              <instance_material symbol="_01___Default" target="#_01___Default"/>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <node id="Bone01" name="Bone01" type="JOINT">
+        <translate sid="translate">3,661480 -18,201599 7,288470</translate>
+        <rotate sid="rotateZ">0 0 1 -90,000008</rotate>
+        <rotate sid="rotateY">0 1 0 -1,671969</rotate>
+        <rotate sid="rotateX">1 0 0 90,000000</rotate>
+        <scale sid="scale">1,406349 1,406349 1,406350</scale>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#RootNode"/>
+  </scene>
+</COLLADA>
+

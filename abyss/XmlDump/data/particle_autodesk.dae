@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.0">
+  <asset>
+    <contributor>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+    </contributor>
+    <created>2008-03-11T22:59:17Z</created>
+    <modified>2008-03-11T22:59:17Z</modified>
+    <unit meter="0,025400"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_visual_scenes>
+    <visual_scene id="RootNode" name="RootNode">
+      <node id="PCloud01" name="PCloud01">
+        <translate sid="translate">13,451744 12,614449 13,192105</translate>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#RootNode"/>
+  </scene>
+</COLLADA>
+

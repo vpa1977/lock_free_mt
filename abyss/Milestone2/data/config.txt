@@ -1,0 +1,11 @@
+stars stars.txt
+sun sun.txt
+planet mercury.txt
+planet venus.txt
+planet earth.txt
+planet mars.txt
+planet jupiter.txt
+planet saturn.txt
+planet uranus.txt
+planet neptune.txt
+planet pluto.txt

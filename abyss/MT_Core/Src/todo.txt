@@ -1,0 +1,23 @@
+1.1.	обрабатывать hybernate флаги при раздаче команд
+1.2.	при возникновении аварийной ситуации сбрасывать все hybernate флаги
+1.3.	то же самое при получении команды exit
+====================================================================================
+
+2.1.	advanced параметры запуска секций
+* 2.1.1.	флаги в section registrator-ах
+* 2.1.2.	флаги в команде запуска секции
+* 2.1.3.	непротиворечивость 2.1.1. и 2.1.2.
+* 2.1.4.	логика CSectionDataStorage с учётом флагов
+*			CSectionDataStorage::CreateSection()
+*			CSectionDataStorage::FindSomethingToExecute()
+
+2.2.	hybernate флаги в новых условиях
+*			CThreadData::ThreadHasNothingToDo()
+*			CSectionDataStorage::GetSectionStatistic()
+*			CThreadData::ProcessSectionStatistic()
+
+2.3		тесты
+*			regular
+*			bound
+*			exclusive
+*			partner

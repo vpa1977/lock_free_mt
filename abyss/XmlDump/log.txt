@@ -1,0 +1,4 @@
+193731681: CLog::Init()
+193732290: Size Before normalize 1152
+193732291: IB Size Before normalize 36
+193732310: CLog::Close()

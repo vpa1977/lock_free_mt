@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=venus.jpg
+radius=7	
+selfSpeed=0.1
+velocity=0.054
+size=0.8
+point=1.9
+
+
+
+
+

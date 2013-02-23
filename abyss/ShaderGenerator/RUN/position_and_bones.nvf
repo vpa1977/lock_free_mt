@@ -1,0 +1,14 @@
+vs.1.0
+
+#beginfragment f_position_worldviewprojcombined_0bones_directoutput
+dp4 oPos.x, v0, c_worldviewproj++
+dp4 oPos.y, v0, c_worldviewproj++
+dp4 oPos.z, v0, c_worldviewproj++
+dp4 oPos.w, v0, c_worldviewproj++
+#endfragment
+
+#beginfragment f_position_worldviewprojseparate_0bones_directoutput
+m4x4 r_tmp, v0, c_world
+m4x4 oPos, r_tmp, c_viewproj
+#endfragment
+

@@ -1,0 +1,18 @@
+173858: CLog::Init()
+173858: CTest3Section::Reaction( const CCommand_MTInfo& in_rMTInfoCommand )
+173858:   m_NProcessors = 1
+173858:   m_NWorkers = 1
+173858:   NThreadsToRun = 2
+173858: CTest3Section::Reaction( const CCommand_MTInfo& in_rMTInfoCommand ) end
+173858: CTest3Section::Reaction( const CCommand_LaunchThreadsResult& in_rResult )
+173858:   in_rResult.m_Result = 0
+173858: CTest3Section::Reaction( const CCommand_LaunchThreadsResult& in_rResult ) end
+173858: CTest3Section::Reaction( const CCommand_LaunchSectionResult& in_rResult )
+173858:   in_rResult.m_ErrorCode = 0
+173858:   window section launched
+173858: CTest3Section::Reaction( const CCommand_LaunchSectionResult& in_rResult ) end
+173858: CTest3Section::Reaction( const CCommand_LaunchSectionResult& in_rResult )
+173858:   in_rResult.m_ErrorCode = 0
+173858:   worker launched
+173858: CTest3Section::Reaction( const CCommand_LaunchSectionResult& in_rResult ) end
+173858: CLog::Close()

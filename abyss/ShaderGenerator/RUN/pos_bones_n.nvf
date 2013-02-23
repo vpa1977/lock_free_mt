@@ -1,0 +1,192 @@
+
+#include "constants.h"
+
+vs.1.1
+
+// r_position_skinned - vertex position with skinning applied
+// r_normal_objectspace - vertex normal with skinning applied
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_n_0
+
+mov r_position_skinned, VERTEX_POSITION
+mov r_normal_objectspace.xyz, VERTEX_NORMAL.xyz
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_n_1
+
+// bone 0
+mov a0.x, VERTEX_BONEINDICES.x
+// position
+dp4 r_position_skinned.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_position_skinned.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_position_skinned.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_position_skinned.w, CONST_ONE_ZERO.x
+// normal
+dp3 r_normal_objectspace.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_normal_objectspace.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_normal_objectspace.z, VERTEX_NORMAL, c[a0.x + 2]
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_n_2
+
+// bone 0
+mov a0.x, VERTEX_BONEINDICES.x
+// position
+dp4 r_position_skinned.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_position_skinned.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_position_skinned.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_position_skinned.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_position_skinned, VERTEX_BONEWEIGHTS.xxxx
+// normal
+dp3 r_normal_objectspace.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_normal_objectspace.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_normal_objectspace.z, VERTEX_NORMAL, c[a0.x + 2]
+mul r_normal_objectspace.xyz, r_normal_objectspace.xyz, VERTEX_BONEWEIGHTS.xxx
+// calc weight for bone 1
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+// bone 1
+mov a0.x, VERTEX_BONEINDICES.y
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, r_final_weight.xxxx, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, r_final_weight.xxx, r_normal_objectspace.xyz
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_n_3
+
+// bone 0
+mov a0.x, VERTEX_BONEINDICES.x
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_bone_tmp, VERTEX_BONEWEIGHTS.xxxx
+// normal
+dp3 r_normal_objectspace.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_normal_objectspace.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_normal_objectspace.z, VERTEX_NORMAL, c[a0.x + 2]
+mul r_normal_objectspace.xyz, r_normal_objectspace.xyz, VERTEX_BONEWEIGHTS.xxx
+// calc weight for bone 1
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+// bone 1
+mov a0.x, VERTEX_BONEINDICES.y
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, VERTEX_BONEWEIGHTS.yyyy, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, VERTEX_BONEWEIGHTS.yyy, r_normal_objectspace.xyz
+// calc weight for bone 2
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.y
+
+// bone 2
+mov a0.x, VERTEX_BONEINDICES.z
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, r_final_weight.xxxx, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, r_final_weight.xxx, r_normal_objectspace.xyz
+
+#endfragment
+
+
+//-----------------------------------------------------------------------------
+#beginfragment f_bones_n_4
+
+// bone 0
+mov a0.x, VERTEX_BONEINDICES.x
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mul r_position_skinned, r_bone_tmp, VERTEX_BONEWEIGHTS.xxxx
+// normal
+dp3 r_normal_objectspace.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_normal_objectspace.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_normal_objectspace.z, VERTEX_NORMAL, c[a0.x + 2]
+mul r_normal_objectspace.xyz, r_normal_objectspace.xyz, VERTEX_BONEWEIGHTS.xxx
+// calc weight for bone 1
+sub r_final_weight.x, CONST_ONE_ZERO.x, VERTEX_BONEWEIGHTS.x
+
+// bone 1
+mov a0.x, VERTEX_BONEINDICES.y
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, VERTEX_BONEWEIGHTS.yyyy, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, VERTEX_BONEWEIGHTS.yyy, r_normal_objectspace.xyz
+// calc weight for bone 2
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.y
+
+// bone 2
+mov a0.x, VERTEX_BONEINDICES.z
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, VERTEX_BONEWEIGHTS.zzzz, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, VERTEX_BONEWEIGHTS.zzz, r_normal_objectspace.xyz
+// calc weight for bone 3
+sub r_final_weight.x, r_final_weight.x, VERTEX_BONEWEIGHTS.z
+
+// bone 3
+mov a0.x, VERTEX_BONEINDICES.w
+// position
+dp4 r_bone_tmp.x, VERTEX_POSITION, c[a0.x + 0]
+dp4 r_bone_tmp.y, VERTEX_POSITION, c[a0.x + 1]
+dp4 r_bone_tmp.z, VERTEX_POSITION, c[a0.x + 2]
+mov r_bone_tmp.w, CONST_ONE_ZERO.x
+mad r_position_skinned, r_bone_tmp, r_final_weight.xxxx, r_position_skinned
+// normal
+dp3 r_bone_tmp.x, VERTEX_NORMAL, c[a0.x + 0]
+dp3 r_bone_tmp.y, VERTEX_NORMAL, c[a0.x + 1]
+dp3 r_bone_tmp.z, VERTEX_NORMAL, c[a0.x + 2]
+mad r_normal_objectspace.xyz, r_bone_tmp.xyz, r_final_weight.xxx, r_normal_objectspace.xyz
+
+#endfragment
+
+
+

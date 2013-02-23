@@ -1,0 +1,11 @@
+; Khumaak !
+model=sphere.txt
+texture=tex.jpg
+radius=0	
+selfSpeed=0.1
+velocity=0.00
+size=2
+
+
+
+

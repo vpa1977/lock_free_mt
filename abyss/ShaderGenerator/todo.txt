@@ -1,0 +1,7 @@
+
+CShaderResources::
+	bool m_Required_VWorld;
+	bool m_Required_VCamSpace;
+	bool m_Required_NObject;      <- lights
+	bool m_Required_NCamSpace;
+	bool m_Required_NReflection;

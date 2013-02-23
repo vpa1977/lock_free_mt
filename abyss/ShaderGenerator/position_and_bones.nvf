@@ -1,0 +1,11 @@
+vs.1.0
+
+#beginfragment f_position_worldviewproj_0bones_directoutput
+m4x4 oPos, v0, c_worldviewproj
+#endfragment
+
+#beginfragment f_position_world_viewproj_0bones_directoutput
+m4x4 r_tmp, v0, c_world
+m4x4 oPos, r_tmp, c_viewproj
+#endfragment
+

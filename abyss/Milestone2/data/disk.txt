@@ -1,0 +1,11 @@
+; Khumaak !
+model=sphere.txt
+texture=disk.jpg
+radius=0	
+selfSpeed=0.1
+velocity=0.003
+size=1.65
+point=5
+angle=0.5
+disk=true
+

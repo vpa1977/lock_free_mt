@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=mercury.jpg
+radius=4	
+selfSpeed=0.1
+velocity=0.125
+size=0.5
+point=0.5
+
+
+
+
+

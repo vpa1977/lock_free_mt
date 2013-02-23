@@ -1,0 +1,14 @@
+; Khumaak !
+model=sphere.txt
+texture=saturn.jpg
+radius=23	
+selfSpeed=0.1
+velocity=0.009
+size=1.5
+point=5
+satellite=disk.txt
+
+
+
+
+

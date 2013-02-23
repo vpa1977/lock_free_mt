@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=uranus.jpg
+radius=27	
+selfSpeed=0.1
+velocity=0.007
+size=0.5
+point=2
+
+
+
+
+

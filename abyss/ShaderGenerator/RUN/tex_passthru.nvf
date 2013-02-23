@@ -1,0 +1,39 @@
+
+#include "constants.h"
+
+vs.1.1
+
+
+#beginfragment f_tex0_passthru
+mov oT0.xy, VERTEX_TEXCOORD0.xy
+#endfragment
+
+#beginfragment f_tex1_passthru
+mov oT1.xy, VERTEX_TEXCOORD1.xy
+#endfragment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+; Khumaak !
+model=sphere.txt
+texture=neptune.jpg
+radius=31	
+selfSpeed=0.1
+velocity=0.0058
+size=0.5
+point=2
+
+
+
+
+

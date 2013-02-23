@@ -1,0 +1,6 @@
+17190195: CLog::Init()
+17190195: main() begin -----------------------
+17190196: CSectionDataStorage::CreateSection()
+17190196:   ClassID = 756852230
+17190197: CTest7Section::Reaction( const CCommand_SectionStartup& )
+17190197:   MAXIMUM_WAIT_OBJECTS = 64

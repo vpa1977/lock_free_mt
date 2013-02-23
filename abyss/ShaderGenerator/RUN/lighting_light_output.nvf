@@ -1,0 +1,16 @@
+
+#include "constants.h"
+
+vs.1.0
+
+
+
+#beginfragment f_lighting_output
+    mov oD0, r_light_3_result.xyzz
+#endfragment
+
+
+
+#beginfragment f_lighting_output_diffuse
+    mul oD0, r_light_3_result.xyzz, VERTEX_DIFFUSE
+#endfragment

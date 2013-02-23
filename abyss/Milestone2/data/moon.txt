@@ -1,0 +1,12 @@
+; Khumaak !
+model=sphere.txt
+texture=moon.jpg
+radius=1.5	
+selfSpeed=0.1
+velocity=0.5
+size=0.2
+
+
+
+
+
